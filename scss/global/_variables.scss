@@ -1,0 +1,29 @@
+// COLORS
+$background: rgba(34, 53, 213, 1);
+$background_card: rgba(38, 177, 112, 1);
+$background_card--header: rgba(126, 211, 72, 1);;
+$text_color: rgba(0, 0, 0, 1);
+
+
+// BREAKPOINTS
+$breakpoints : (
+    "md": 576px,
+    "lg": 992px,
+    "xl": 1200px,
+);
+
+@mixin md{
+    @media(min-width: map-get($breakpoints, 'md')){
+        @content;
+    }
+}
+@mixin lg{
+    @media(min-width: map-get($breakpoints, 'lg')){
+        @content;
+    }
+}
+@mixin xl{
+    @media(min-width: map-get($breakpoints, 'xl')){
+        @content;
+    }
+}

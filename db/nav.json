@@ -1,0 +1,49 @@
+{
+    "nav" : [
+        {
+            "id" : 1,
+            "name" : "qarabağ",
+            "link" : "../pages/Qarabağ/qarabağ.html"
+        },
+        {
+            "id" : 2,
+            "name" : "gündəm",
+            "link" : "../pages/Gündəm/gündəm.html"
+        },
+        {
+            "id" : 3,
+            "name" : "cəmiyyət",
+            "link" : "#"
+        },
+        {
+            "id" : 4,
+            "name" : "hadisə",
+            "link" : "#"
+        },
+        {
+            "id" : 5,
+            "name" : "siyasət",
+            "link" : "#"
+        },
+        {
+            "id" : 6,
+            "name" : "dünya",
+            "link" : "#"
+        },
+        {
+            "id" : 7,
+            "name" : "sağlamlıq",
+            "link" : "#"
+        },
+        {
+            "id" : 8,
+            "name" : "sosial-iqtisadi",
+            "link" : "#"
+        },
+        {
+            "id" : 9,
+            "name" : "mədəniyyət",
+            "link" : "#"
+        }
+    ]
+}
