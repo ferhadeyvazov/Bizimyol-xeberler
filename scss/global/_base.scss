@@ -16,6 +16,10 @@ img{
     height: auto;
 }
 
+ul{
+    margin: 0;
+}
+
 .section{
     padding: 3rem 0;
 }
@@ -35,4 +39,10 @@ img{
 }
 .directCol{
     flex-direction: column;
+}
+
+.nav-link{
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(0,0,0,0.8);
 }

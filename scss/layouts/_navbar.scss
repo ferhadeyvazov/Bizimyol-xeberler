@@ -1,8 +1,23 @@
 @use "../global" as *;
 
-.nav{
-    background-color: $background;
-    .logo{
-        width: 70px;
+.navbar{
+    background-color: $background !important;
+    .navbar-brand{
+        img{
+            width: 130px;
+        }
     }
+    i{
+        color: #FFFFFF;
+        font-size: 20px;
+    }
+
+    .currency_list{
+        a{
+            color: #FFFFFF;
+            font-weight: 400;
+            font-size: 18px;
+        }
+    }
+
 }

@@ -51,6 +51,10 @@ img {
   height: auto;
 }
 
+ul {
+  margin: 0;
+}
+
 .section {
   padding: 3rem 0;
 }
@@ -67,6 +71,12 @@ img {
 
 .directCol {
   flex-direction: column;
+}
+
+.nav-link {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .header {
@@ -98,9 +108,18 @@ img {
   }
 }
 
-.nav {
-  background-color: rgb(34, 53, 213);
+.navbar {
+  background-color: rgb(34, 53, 213) !important;
 }
-.nav .logo {
-  width: 70px;
+.navbar .navbar-brand img {
+  width: 130px;
+}
+.navbar i {
+  color: #FFFFFF;
+  font-size: 20px;
+}
+.navbar .currency_list a {
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 18px;
 }/*# sourceMappingURL=style.css.map */

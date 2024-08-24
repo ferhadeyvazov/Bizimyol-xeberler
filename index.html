@@ -17,7 +17,7 @@
 
 <body>
     <!-- HEADER -->
-    <header class="header">                                                                   
+    <header class="header">
         <div class="container disFlex">
             <ul class="header_nav d-flex gap-2 ps-0">
                 <li><a href="#">Haqqımızda</a></li>
@@ -36,11 +36,91 @@
         </div>
     </header>
     <!-- NAVBAR -->
-    <nav class="nav">
-        <div class="container">
-            <img src="./assets/img/logo/main_logo.png" alt="" class="logo">
-            <button class="btn btn-primary">Primary</button>
-            <button class="btn btn-danger">danger</button>
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/"><img src="./assets/img/logo/main_logo.png" alt="main_logo"
+                    class="logo"></a>
+            <i class="bi bi-three-dots-vertical d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation"></i>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">BizimYol</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Axtar..." aria-label="Search">
+                        <button class="btn btn-outline-primary" type="submit">Axtar</button>
+                    </form>
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">QARABAĞ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">GÜNDƏM</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CƏMİYYƏT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">HADİSƏ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">SİYASƏT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">DÜNYA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">SAĞLAMLIQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">SOSİAL-İQTİSADİ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">MƏDƏNİYYƏT</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                DİGƏR
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">
+                                    <i class="bi bi-mic"></i> PODKAST
+                                </a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- for large screen -->
+            <ul class="nav d-none d-lg-flex gap-1 nav-logo">
+                <li class="currency_list"><a href="#"><i class="bi bi-currency-dollar"></i> 91.78</a></li>
+                <li class="currency_list"><a href="#"><i class="bi bi-currency-euro"></i> 98.03</a></li>
+                <li class="currency_list"><a href="#"><i class="bi bi-currency-bitcoin"></i> 62,979.30 $</a></li>
+            </ul>
+            <ul class="nav d-none d-lg-flex gap-1 nav-logo">
+                <li><img src="./assets/img/logo/logo_up.png" alt="up"></li>
+                <li><img src="./assets/img/logo/logo_down.png" alt="down"></li>
+                <li><img src="./assets/img/logo/logo_left.png" alt="left"></li>
+                <li><img src="./assets/img/logo/logo_right.png" alt="right"></li>
+            </ul>
+
+            <ul class="nav justify-content-end d-none d-lg-flex">
+                <li class="nav-item"><a href="#" class="nav-link text-white fw-medium active">
+                    <i class="bi bi-mic"></i> PODKAST
+                </a></li>
+                <li class="nav-item"><a href="#" class="nav-link">
+                    <i class="bi bi-search"></i>
+                </a></li>
+            </ul>
         </div>
     </nav>
 
