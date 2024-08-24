@@ -153,6 +153,5 @@ ul {
 .footer_info {
   display: flex;
   flex-direction: column;
-  justify-content: end;
   gap: 5px;
 }/*# sourceMappingURL=style.css.map */
