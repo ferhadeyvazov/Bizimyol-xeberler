@@ -1,0 +1,30 @@
+@use '../global' as *;
+
+.header{
+    display: none;
+    @include md{
+        padding: 5px 0;
+        background-color: $text_color;
+        display: flex;
+        &_nav{
+            margin: 0;
+            li{
+                a{
+                    text-transform: uppercase;
+                    font-size: 13px;
+                    color: rgba(221, 221, 221, 1);
+                    cursor: pointer;
+                }
+            }
+        }
+        &_socialMedia{
+            &--description{
+                display: none;
+                @include lg{
+                    display: flex;
+                    color: rgba(221, 221, 221, 1);
+                }
+            }
+        }
+    }
+}

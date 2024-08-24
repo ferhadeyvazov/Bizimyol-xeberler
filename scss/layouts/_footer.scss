@@ -1,0 +1,22 @@
+@use '../global' as *;
+
+.footer{
+    background-color: $background;
+    padding: 3rem 0;
+    &_logo{
+        .logo{
+            width: 150px;
+            margin-bottom: .8rem;
+        }
+    }
+    .social_icon{
+        background: none;
+        font-size: 1.5rem;
+        color:rgba(255, 255, 255, 1);
+    }
+    &_info{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+}

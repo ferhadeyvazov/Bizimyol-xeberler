@@ -1,31 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ferhad Eyvazov">
+    <!-- =========BOOTSTRAP V5.3========== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- =========BOOTSTRAP İCONS========== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- =========CSS STYLE========== -->
     <link rel="stylesheet" href="./dist/style.css">
     <title>Bizimyol-Xəbərlər</title>
 </head>
-<body>
-    
-    <!-- HEADER -->
-<header class="header">
-    <div class="container">Header</div>
-</header>
-    <!-- NAVBAR -->
-<nav class="nav">
-    <div class="container">Navbar</div>
-</nav>
-    <!-- MAİN -->
-<main class="main">
-    <div class="container">main</div>
-</main>
 
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container disFlex">
+            <ul class="header_nav d-flex gap-2 ps-0">
+                <li><a href="#">Haqqımızda</a></li>
+                <li><a href="#">Əlaqə</a></li>
+                <li><a href="#">Məxfilik Siyasəti</a></li>
+                <li><a href="#">Reklam</a></li>
+            </ul>
+            <div class="header_socialMedia d-flex gap-2">
+                <span class="header_socialMedia--description me-2">Bizi sosial şəbəkələrdə izləyin:</span>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                <a href="#"><i class="bi bi-youtube"></i></a>
+                <a href="#"><i class="bi bi-telegram"></i></a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- NAVBAR -->
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="/"><img src="./assets/img/logo/main_logo.png" alt="main_logo"
+                    class="logo"></a>
+            <i class="bi bi-three-dots-vertical d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation"></i>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">BizimYol</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Axtar..." aria-label="Search">
+                        <button class="btn btn-outline-primary" type="submit">Axtar</button>
+                    </form>
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">QARABAĞ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">GÜNDƏM</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CƏMİYYƏT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">HADİSƏ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">SİYASƏT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">DÜNYA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">SAĞLAMLIQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">SOSİAL-İQTİSADİ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">MƏDƏNİYYƏT</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                DİGƏR
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">
+                                    <i class="bi bi-mic"></i> PODKAST
+                                </a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- for large screen -->
+            <ul class="nav d-none d-lg-flex gap-1 nav-logo">
+                <li class="currency_list"><a href="#"><i class="bi bi-currency-dollar"></i> 91.78</a></li>
+                <li class="currency_list"><a href="#"><i class="bi bi-currency-euro"></i> 98.03</a></li>
+                <li class="currency_list"><a href="#"><i class="bi bi-currency-bitcoin"></i> 62,979.30 $</a></li>
+            </ul>
+            <ul class="nav d-none d-lg-flex gap-1 nav-logo">
+                <li><img src="./assets/img/logo/logo_up.png" alt="up"></li>
+                <li><img src="./assets/img/logo/logo_down.png" alt="down"></li>
+                <li><img src="./assets/img/logo/logo_left.png" alt="left"></li>
+                <li><img src="./assets/img/logo/logo_right.png" alt="right"></li>
+            </ul>
+
+            <ul class="nav justify-content-end d-none d-lg-flex">
+                <li class="nav-item"><a href="#" class="nav-link text-white fw-medium active">
+                    <i class="bi bi-mic"></i> PODKAST
+                </a></li>
+                <li class="nav-item"><a href="#" class="nav-link">
+                    <i class="bi bi-search"></i>
+                </a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- MAİN -->
+    <main class="main">
+        <div class="container">
+            <h3>main</h3>
+        </div>
+    </main>
 
     <!-- GÜNÜN ƏSAS XƏBƏRLƏRİ -->
-<section class="section">
-    <div class="container"></div>
-</section>
+    <section class="section">
+        <div class="container"></div>
+    </section>
     <!-- KÖŞƏ YAZILARI -->
     <!-- VİDEOLAR -->
     <!-- POPULYAR XƏBƏRLƏR -->
@@ -35,12 +145,48 @@
     <!-- DOĞMA AZƏRBAYCAN -->
 
     <!-- FOOTER -->
-<footer class="footer">
-    <div class="container"></div>
-</footer>
+    <footer class="footer">
+        <div class="container text-center text-md-start d-md-flex justify-content-md-between mb-5">
+                <a href="/" class="footer_logo"><img class="logo" src="./assets/img/logo/main_logo.png" alt="Main Logo"></a>
+                <div class="d-flex gap-3 justify-content-center">
+                    <a class="social_icon" href="#"><i class="bi bi-facebook"></i></a>
+                    <a class="social_icon" href="#"><i class="bi bi-linkedin"></i></a>
+                    <a class="social_icon" href="#"><i class="bi bi-twitter-x"></i></a>
+                    <a class="social_icon" href="#"><i class="bi bi-youtube"></i></a>
+                    <a class="social_icon" href="#"><i class="bi bi-telegram"></i></a>
+                </div>
+        </div>
 
+        <div class="container d-sm-flex justify-content-between">
+            <ul class="footer_menu">
+                <li class="footer_menu-link mb-2"><a class="nav-link" href="#">Haqqımızda</a></li>
+                <li class="footer_menu-link mb-2"><a class="nav-link" href="#">Əlaqə</a></li>
+                <li class="footer_menu-link mb-2"><a class="nav-link" href="#">Məxfilik Siyasəti</a></li>
+                <li class="footer_menu-link mb-2"><a class="nav-link" href="#">Reklam</a></li>
+            </ul>
+            <hr/>
+            <ul class="footer_info">
+                <li>
+                    <span class="nav-link">Bakı şəhəri, Həsən Əliyev küçəsi 7c</span>
+                </li>
+                <li>
+                    <a class="nav-link" href="tel:+994504987368">Tel: (+994) 50 498 73 68</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="mailto:bizimyol07@gmail.com">e-mail: bizimyol07@gmail.com</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 
+    <!-- BOOTSTRAP SCRIPT  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- MAIN SCRIPT  -->
     <script type="module" src="./main.js"></script>
 
 </body>
+
 </html>
