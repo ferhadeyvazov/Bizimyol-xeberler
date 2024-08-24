@@ -1,0 +1,8 @@
+@use "../global" as *;
+
+.nav{
+    background-color: $background;
+    .logo{
+        width: 70px;
+    }
+}
