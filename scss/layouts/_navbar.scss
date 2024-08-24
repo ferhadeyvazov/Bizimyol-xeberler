@@ -2,6 +2,10 @@
 
 .navbar{
     background-color: $background !important;
+    @include lg{
+        top: 0;
+        position: sticky;
+    }
     .navbar-brand{
         img{
             width: 130px;

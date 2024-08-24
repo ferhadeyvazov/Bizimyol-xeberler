@@ -111,6 +111,12 @@ ul {
 .navbar {
   background-color: rgb(34, 53, 213) !important;
 }
+@media (min-width: 992px) {
+  .navbar {
+    top: 0;
+    position: sticky;
+  }
+}
 .navbar .navbar-brand img {
   width: 130px;
 }
@@ -122,4 +128,9 @@ ul {
   color: #FFFFFF;
   font-weight: 400;
   font-size: 18px;
+}
+
+.footer {
+  background-color: rgb(34, 53, 213);
+  padding: 3rem 0;
 }/*# sourceMappingURL=style.css.map */
