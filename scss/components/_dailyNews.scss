@@ -1,0 +1,40 @@
+@use "../global" as *;
+
+.daily_news{
+    display: grid;
+    gap: 1rem;
+    @include md{
+        // grid-template-columns: 30% 70%;
+        // font-size: 10px;
+    }
+    @include lg{
+        grid-template-columns: 20% 80%;
+        font-size: 2rem;
+    }
+    &-col{
+        background-color: $background;
+        color: $text_color-light;
+        padding: 1rem;
+        h2{
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        span{
+            font-weight: 300;
+            font-size: 1rem;
+            @include md{
+                font-size: 1.25rem;
+            }
+            @include lg{
+                font-size: 2.4rem;
+            }
+        }
+        img{
+            width: 55px;
+            aspect-ratio: 1/1;
+            @include lg{
+                width: 130px;
+            }
+        }
+    }
+}

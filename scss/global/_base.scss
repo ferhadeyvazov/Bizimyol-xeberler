@@ -41,6 +41,11 @@ ul{
     justify-content: space-between;
     align-items: center;
 }
+.flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .directCol{
     flex-direction: column;
 }
