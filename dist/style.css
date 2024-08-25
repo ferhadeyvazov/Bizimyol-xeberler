@@ -206,4 +206,25 @@ ul {
 .dAzCards_card .arrowDiv i {
   color: #948980;
   font-size: 1.2rem;
+}
+
+.info_picture {
+  background-image: url(../../assets/img/infoq_img.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  width: 100%;
+  aspect-ratio: 2/1;
+}
+.info_picture-hero {
+  background: linear-gradient(90deg, #2235d5, rgb(38, 177, 112));
+  padding: 0.5rem 1rem;
+  width: 100%;
+}
+.info_picture-hero h3 {
+  color: #FFFFFF;
+  font-weight: 500;
 }/*# sourceMappingURL=style.css.map */

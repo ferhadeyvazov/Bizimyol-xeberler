@@ -1,0 +1,22 @@
+@use '../global' as *;
+
+.info_picture{
+    background-image: url(../../assets/img/infoq_img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 100%;
+    aspect-ratio: 2/1;
+    &-hero{
+        background: linear-gradient(90deg, #2235d5, rgba(38, 177, 112, 1));
+        padding: .5rem 1rem;
+        width: 100%;
+        h3{
+            color: #FFFFFF;
+            font-weight: 500;
+        }
+    }
+}
