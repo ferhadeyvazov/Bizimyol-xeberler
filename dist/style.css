@@ -236,6 +236,7 @@ ul {
 }
 .news_img {
   border-radius: 10px 10px 0 0;
+  aspect-ratio: 16/9;
 }
 .news_card {
   background-color: rgb(246, 246, 246);
