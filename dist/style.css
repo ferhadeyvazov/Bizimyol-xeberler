@@ -86,6 +86,17 @@ ul {
   color: rgba(0, 0, 0, 0.8);
 }
 
+.sect-header {
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  font-size: 1.25rem;
+}
+@media (min-width: 576px) {
+  .sect-header {
+    font-size: 2rem;
+  }
+}
+
 .header {
   display: none;
 }
@@ -154,4 +165,45 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 5px;
+}
+
+.view span {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: rgb(204, 204, 204);
+}
+.view i {
+  color: rgb(0, 155, 255);
+}
+
+.dAzCards {
+  display: grid;
+  aspect-ratio: 1/1;
+  gap: 0.8rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+@media (min-width: 576px) {
+  .dAzCards {
+    aspect-ratio: 4/1;
+  }
+}
+.dAzCards_card {
+  background-image: url(../../assets/img/dogma/bulvar.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: end;
+  padding: 1.3rem;
+}
+.dAzCards_card span {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: rgb(255, 255, 255);
+}
+.dAzCards_card .arrowDiv {
+  display: flex;
+  gap: 8px;
+}
+.dAzCards_card .arrowDiv i {
+  color: #948980;
+  font-size: 1.2rem;
 }/*# sourceMappingURL=style.css.map */
