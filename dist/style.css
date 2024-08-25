@@ -227,4 +227,21 @@ ul {
 .info_picture-hero h3 {
   color: #FFFFFF;
   font-weight: 500;
+}
+
+.news {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 0.8rem;
+}
+.news_img {
+  border-radius: 10px 10px 0 0;
+}
+.news_card {
+  background-color: rgb(246, 246, 246);
+  padding: 0.8rem 2rem 3rem 2rem;
+}
+.news_card-desc {
+  font-size: 18px;
+  font-weight: 800;
 }/*# sourceMappingURL=style.css.map */
