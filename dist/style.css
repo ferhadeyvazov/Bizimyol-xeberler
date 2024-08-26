@@ -294,4 +294,65 @@ ul {
   .daily_news-col img {
     width: 130px;
   }
+}
+
+@media (min-width: 992px) {
+  .weeklyPhoto {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.weeklyPhoto img {
+  border-radius: 10px 10px 0 0;
+}
+@media (min-width: 992px) {
+  .weeklyPhoto img {
+    border-radius: 10px 0 0 10px;
+    width: 60%;
+  }
+}
+.weeklyPhoto_card {
+  background-color: rgb(38, 177, 112);
+  color: rgb(255, 255, 255);
+  padding: 1rem;
+}
+@media (min-width: 992px) {
+  .weeklyPhoto_card {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+.weeklyPhoto_card .card_attr {
+  margin-bottom: 1.3rem;
+}
+.weeklyPhoto_card .card_attr-btn {
+  background: rgb(34, 53, 213);
+  color: #FFFFFF;
+  padding: 5px 13px;
+}
+.weeklyPhoto_card-head {
+  text-transform: capitalize;
+}
+@media (min-width: 992px) {
+  .weeklyPhoto_card-head {
+    font-size: 2.5rem;
+  }
+}
+.weeklyPhoto_card-footer {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.weeklyPhoto_card .view_Photos {
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.weeklyPhoto_card .view_Photos i {
+  align-self: center;
+  font-size: 1rem;
 }/*# sourceMappingURL=style.css.map */
