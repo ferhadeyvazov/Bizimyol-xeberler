@@ -40,10 +40,10 @@
     <nav class="navbar bg-body-tertiary fixed-top">
         <div class="container">
             <a class="navbar-brand" href="/"><img src="./assets/img/logo/main_logo.png" alt="main_logo"
-                    class="logo"></a>
-            <i class="bi bi-three-dots-vertical d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                class="logo"></a>
+                <i class="bi bi-three-dots-vertical d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar" aria-label="Toggle navigation"></i>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasNavbarLabel">BizimYol</h5>
@@ -84,48 +84,62 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                DİGƏR
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">
-                                        <i class="bi bi-mic"></i> PODKAST
-                                    </a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
+                            aria-expanded="false">
+                            DİGƏR
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">
+                                <i class="bi bi-mic"></i> PODKAST
+                            </a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
-            <!-- for large screen -->
-            <ul class="nav d-none d-lg-flex gap-1 nav-logo">
-                <li class="currency_list"><a href="#"><i class="bi bi-currency-dollar"></i> 91.78</a></li>
-                <li class="currency_list"><a href="#"><i class="bi bi-currency-euro"></i> 98.03</a></li>
-                <li class="currency_list"><a href="#"><i class="bi bi-currency-bitcoin"></i> 62,979.30 $</a></li>
-            </ul>
-            <ul class="nav d-none d-lg-flex gap-1 nav-logo">
-                <li><img src="./assets/img/logo/logo_up.png" alt="up"></li>
-                <li><img src="./assets/img/logo/logo_down.png" alt="down"></li>
-                <li><img src="./assets/img/logo/logo_left.png" alt="left"></li>
-                <li><img src="./assets/img/logo/logo_right.png" alt="right"></li>
-            </ul>
-
-            <ul class="nav justify-content-end d-none d-lg-flex">
-                <li class="nav-item"><a href="#" class="nav-link text-white fw-medium active">
-                        <i class="bi bi-mic"></i> PODKAST
-                    </a></li>
-                <li class="nav-item"><a href="#" class="nav-link">
-                        <i class="bi bi-search"></i>
-                    </a></li>
-            </ul>
         </div>
-    </nav>
+        <!-- for large screen -->
+        <ul class="nav d-none d-lg-flex gap-1 nav-logo">
+            <li class="currency_list"><a href="#"><i class="bi bi-currency-dollar"></i> 91.78</a></li>
+            <li class="currency_list"><a href="#"><i class="bi bi-currency-euro"></i> 98.03</a></li>
+            <li class="currency_list"><a href="#"><i class="bi bi-currency-bitcoin"></i> 62,979.30 $</a></li>
+        </ul>
+        <ul class="nav d-none d-lg-flex gap-1 nav-logo">
+            <li><img src="./assets/img/logo/logo_up.png" alt="up"></li>
+            <li><img src="./assets/img/logo/logo_down.png" alt="down"></li>
+            <li><img src="./assets/img/logo/logo_left.png" alt="left"></li>
+            <li><img src="./assets/img/logo/logo_right.png" alt="right"></li>
+        </ul>
+        
+        <ul class="nav justify-content-end d-none d-lg-flex">
+            <li class="nav-item"><a href="#" class="nav-link text-white fw-medium active">
+                <i class="bi bi-mic"></i> PODKAST
+            </a></li>
+            <li class="nav-item"><a href="#" class="nav-link">
+                <i class="bi bi-search"></i>
+            </a></li>
+        </ul>
+    </div>
+</nav>
 
-    <!-- MAİN -->
+<!-- NAVBAR -->
+ <nav id="navLarge">
+    <div class="container">
+        <a href="#" class="navLarge_link">Qarabağ</a>
+        <a href="#" class="navLarge_link">Gündəm</a>
+        <a href="#" class="navLarge_link">Cəmiyyət</a>
+        <a href="#" class="navLarge_link">Hadisə</a>
+        <a href="#" class="navLarge_link">Siyasət</a>
+        <a href="#" class="navLarge_link">Dünya</a>
+        <a href="#" class="navLarge_link">Sağlamlıq</a>
+        <a href="#" class="navLarge_link">Sosial-İqtisadi</a>
+        <a href="#" class="navLarge_link">Mədəniyyət</a>
+    </div>
+ </nav>
+<!-- MAİN -->
     <main class="main">
         <div class="container">
             <h3>main</h3>
@@ -193,37 +207,111 @@
         <div class="container">
             <div class="disFlex mb-4">
                 <h2 class="sect-header">Videolar</h2>
-                <a href="#" class="disFlex view">
-                    <span>hamısını göstər</span>
+                <a href="./pages/Videolar/videolar.html" class="disFlex view">
+                    <span>Bütün Videolar</span>
                     <i class="bi bi-arrow-right-short"></i>
                 </a>
             </div>
 
-            <div class="row">
-                <div class="col-4">
-                    <div class="list-group" id="list-tab" role="tablist">
-                        <a class="list-group-item list-group-item-action active" id="list-home-list"
-                            data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">Home</a>
-                        <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list"
-                            href="#list-profile" role="tab" aria-controls="list-profile">Profile</a>
-                        <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list"
-                            href="#list-messages" role="tab" aria-controls="list-messages">Messages</a>
-                        <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list"
-                            href="#list-settings" role="tab" aria-controls="list-settings">Settings</a>
+            <div class="video_row row">
+                <div class="video_row-col col-12 col-lg-4">
+                    <div class="list-group video_menu" id="list-tab" role="tablist">
+                        <a class="video_menu-list list-group-item list-group-item-action active" id="list-home-list"
+                            data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">
+                            <div class="video-card mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="./assets/img/news_1.png" class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Sumqayıtda Yeni Sənaye Parkı İnşa Ediləcək</h5>
+                                            <p class="card-text text-uppercase">
+                                                <small class="text-body-secondary">Aprel 05 - <span
+                                                        class="text-uppercase">#gündəm</span></small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="video_menu-list list-group-item list-group-item-action" id="list-profile-list"
+                            data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">
+                            <div class="video-card card mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="./assets/img/news_1.png" class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Sumqayıtda Yeni Sənaye Parkı İnşa Ediləcək</h5>
+                                            <p class="card-text text-uppercase">
+                                                <small class="text-body-secondary">Aprel 05 - <span
+                                                        class="text-uppercase">#gündəm</span></small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="video_menu-list list-group-item list-group-item-action" id="list-messages-list"
+                            data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">
+                            <div class="video-card card mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="./assets/img/news_1.png" class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Sumqayıtda Yeni Sənaye Parkı İnşa Ediləcək</h5>
+                                            <p class="card-text text-uppercase">
+                                                <small class="text-body-secondary">Aprel 05 - <span
+                                                        class="text-uppercase">#gündəm</span></small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="video_menu-list list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list"
+                            href="#list-settings" role="tab" aria-controls="list-settings">
+                            <div class="video-card card mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="./assets/img/news_1.png" class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Sumqayıtda Yeni Sənaye Parkı İnşa Ediləcək</h5>
+                                            <p class="card-text text-uppercase">
+                                                <small class="text-body-secondary">Aprel 05 - <span
+                                                        class="text-uppercase">#gündəm</span></small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
-                <div class="col-8">
+                <div class="video_row-col col-12 col-lg-8">
                     <div class="tab-content" id="nav-tabContent">
                         <div class="tab-pane fade show active" id="list-home" role="tabpanel"
                             aria-labelledby="list-home-list">
-                            <video src="./assets/videos/Türk Komutanın Selamlaşması… #shorts #SpringOnShorts.mp4" class="object-fit-cover" autoplay></video>
+                            <img src="./assets/img/news_1.png" alt="">
                         </div>
                         <div class="tab-pane fade" id="list-profile" role="tabpanel"
-                            aria-labelledby="list-profile-list">Profile</div>
+                            aria-labelledby="list-profile-list">
+                            <img src="./assets/img/news_2.png" alt="img2">
+                        </div>
                         <div class="tab-pane fade" id="list-messages" role="tabpanel"
-                            aria-labelledby="list-messages-list">Message</div>
+                            aria-labelledby="list-messages-list">
+                            <img src="./assets/img/news_3.png" alt="video3">
+                        </div>
                         <div class="tab-pane fade" id="list-settings" role="tabpanel"
-                            aria-labelledby="list-settings-list">Settings</div>
+                            aria-labelledby="list-settings-list">
+                            <img src="./assets/img/news_5.png" alt="video4">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -271,7 +359,7 @@
         </div>
     </section>
     <!-- HƏFTƏNİN FOTOSU -->
-    <section class="section">
+    <section>
         <div class="container">
             <div class="disFlex">
                 <h2 class="sect-header">Həftənin Fotosu</h2>
@@ -346,7 +434,7 @@
         </div>
     </section>
     <!-- İNFOQRAFİKA -->
-    <section class="section">
+    <section>
         <div class="container">
             <div class="disFlex">
                 <h2 class="sect-header">Infoqrafiya</h2>

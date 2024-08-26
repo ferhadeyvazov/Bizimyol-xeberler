@@ -25,3 +25,25 @@
     }
 
 }
+
+#navLarge{
+    display: none;
+    @include lg{
+        background-color: #FFFFFF;
+        width: 100%;
+        display: flex;
+        position: sticky;
+        top: 75px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        .container{
+            display: flex;
+            justify-content: space-between;
+            .navLarge_link{
+                color: rgba(0, 0, 0, 0.8);
+                text-transform: uppercase;
+                font-weight: 600;
+                padding: .65rem 0;
+            }            
+        }
+    }
+}
