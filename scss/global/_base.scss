@@ -5,8 +5,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none !important;
     list-style: none;
+    text-decoration: none !important;
     font-family: Britanica !important;
 }
 
@@ -39,6 +39,11 @@ ul{
 .disFlex{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+.flexCenter{
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 .directCol{

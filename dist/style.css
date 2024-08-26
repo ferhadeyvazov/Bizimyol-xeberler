@@ -37,8 +37,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none !important;
   list-style: none;
+  text-decoration: none !important;
   font-family: Britanica !important;
 }
 
@@ -67,6 +67,12 @@ ul {
 .disFlex {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -236,6 +242,7 @@ ul {
 }
 .news_img {
   border-radius: 10px 10px 0 0;
+  aspect-ratio: 16/9;
 }
 .news_card {
   background-color: rgb(246, 246, 246);
@@ -244,4 +251,121 @@ ul {
 .news_card-desc {
   font-size: 18px;
   font-weight: 800;
+}
+
+.daily_news {
+  display: grid;
+  gap: 1rem;
+}
+@media (min-width: 992px) {
+  .daily_news {
+    grid-template-columns: 20% 80%;
+    font-size: 2rem;
+  }
+}
+.daily_news-col {
+  background-color: rgb(34, 53, 213);
+  color: rgb(255, 255, 255);
+  padding: 1rem;
+}
+.daily_news-col h2 {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.daily_news-col span {
+  font-weight: 300;
+  font-size: 1rem;
+}
+@media (min-width: 576px) {
+  .daily_news-col span {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 992px) {
+  .daily_news-col span {
+    font-size: 2.4rem;
+  }
+}
+.daily_news-col img {
+  width: 55px;
+  aspect-ratio: 1/1;
+}
+@media (min-width: 992px) {
+  .daily_news-col img {
+    width: 130px;
+  }
+}
+
+@media (min-width: 992px) {
+  .weeklyPhoto {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.weeklyPhoto img {
+  border-radius: 10px 10px 0 0;
+}
+@media (min-width: 992px) {
+  .weeklyPhoto img {
+    border-radius: 10px 0 0 10px;
+    width: 60%;
+  }
+}
+.weeklyPhoto_card {
+  background-color: rgb(38, 177, 112);
+  color: rgb(255, 255, 255);
+  padding: 1rem;
+}
+@media (min-width: 992px) {
+  .weeklyPhoto_card {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+.weeklyPhoto_card .card_attr {
+  margin-bottom: 1.3rem;
+}
+.weeklyPhoto_card .card_attr-btn {
+  background: rgb(34, 53, 213);
+  color: #FFFFFF;
+  padding: 5px 13px;
+}
+.weeklyPhoto_card-head {
+  text-transform: capitalize;
+}
+@media (min-width: 992px) {
+  .weeklyPhoto_card-head {
+    font-size: 2.5rem;
+  }
+}
+.weeklyPhoto_card-footer {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.weeklyPhoto_card .view_Photos {
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.weeklyPhoto_card .view_Photos i {
+  align-self: center;
+  font-size: 1rem;
+}
+
+.videos_section {
+  background-color: rgb(34, 53, 213);
+}
+.videos_section .sect-header {
+  color: rgb(255, 255, 255);
+}
+@media (min-width: 992px) {
+  .videos_section .videos_container {
+    display: flex;
+    justify-content: space-between;
+  }
 }/*# sourceMappingURL=style.css.map */

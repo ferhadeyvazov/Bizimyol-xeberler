@@ -1,0 +1,57 @@
+@use '../global' as *;
+
+.weeklyPhoto{
+    @include lg{
+        display: flex;
+        justify-content: space-between;
+    }
+    img{
+        border-radius: 10px 10px 0 0;
+        @include lg {
+            border-radius: 10px 0 0 10px;
+            width: 60%;
+        }
+
+    }
+    &_card{
+        background-color: rgba(38, 177, 112, 1);
+        color: $text_color-light;
+        padding: 1rem;
+        @include lg{
+            padding: 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .card_attr{
+            margin-bottom: 1.3rem;
+            &-btn{
+                background: rgba(34, 53, 213, 1);
+                color: #FFFFFF;
+                padding: 5px 13px;
+            }
+        }
+        &-head{
+            text-transform: capitalize;
+            @include lg{
+                font-size: 2.5rem;
+            }
+        }
+        &-footer{
+            text-transform: uppercase;
+            font-size: 12px;
+        }
+        .view_Photos{
+            color: rgba(255, 255, 255, 1);
+            text-transform: uppercase;
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            i{
+                align-self: center;
+                font-size: 1rem;
+            }
+        }
+    }
+}
