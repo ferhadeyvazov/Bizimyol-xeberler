@@ -1,0 +1,16 @@
+@use "../global" as *;
+
+.videos_section{
+    background-color: $background;
+    .sect-header{
+        color: $text_color-light;
+    }
+
+    .videos_container{
+        @include lg{
+            display: flex;
+            justify-content: space-between;
+        }
+
+    }
+}
