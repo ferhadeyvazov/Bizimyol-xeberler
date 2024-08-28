@@ -473,6 +473,11 @@ ul {
     gap: 1rem;
   }
 }
+.mainCarousel_container .mainCarousel_section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
 @media (min-width: 992px) {
   .mainCarousel_container .mainCarousel_section {
     width: 70%;
@@ -480,9 +485,6 @@ ul {
 }
 .mainCarousel_container .mainCarousel_section .mainCarousel_container {
   border: solid;
-}
-.mainCarousel_container .mainCarousel_section .mainCarousel_container-carousel {
-  border: solid red;
 }
 @media (min-width: 992px) {
   .mainCarousel_container .mainCarousel_section .mainCarousel_container-carousel .carousel-item .item {
@@ -510,6 +512,7 @@ ul {
   position: absolute;
   bottom: 0;
   left: 0;
+  font-size: 14px;
 }
 .mainCarousel_container-list {
   background-color: rgb(34, 53, 213);
