@@ -373,7 +373,6 @@ ul {
 }
 .aside .card .card_author {
   display: flex;
-  border: solid red;
 }
 .aside .card .card_author img {
   -o-object-fit: cover;
