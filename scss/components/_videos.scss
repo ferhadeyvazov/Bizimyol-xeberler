@@ -2,8 +2,32 @@
 
 .videos_section{
     background-color: $background;
-    .sect-header{
-        color: $text_color-light;
+    &-header{
+        gap: 1rem;
+        .sect-header{
+            color: $text_color-light;
+        }
+        .header_line{
+            display: none;
+            width: 35%;
+            padding: 8px 0;
+            background-image: url(../../assets/img/line.webp);
+            background-repeat: repeat-x;
+            @include md{
+                display: block;
+                width: 50%;
+            }
+            @include lg{
+                width: 75%;
+                flex-shrink: 4;
+            }
+        }
+        .view{
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            flex-shrink: 0;
+        }
     }
 
     .videos_container{
