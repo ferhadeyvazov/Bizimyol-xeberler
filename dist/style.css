@@ -466,4 +466,21 @@ ul {
 
 .list-group-item {
   background: none !important;
+}
+
+@media (min-width: 992px) {
+  .mainCarousel_container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 992px) {
+  .mainCarousel_container-carousel {
+    width: 70%;
+  }
+}
+@media (min-width: 992px) {
+  .mainCarousel_container-list {
+    width: 30%;
+  }
 }/*# sourceMappingURL=style.css.map */
