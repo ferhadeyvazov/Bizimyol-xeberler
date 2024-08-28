@@ -1,49 +1,141 @@
 @use '../global' as *;
 
-.mainCarousel{
-    &_container{
+// .mainCarousel {
+//     &_container {
+//         gap: 1rem;
+
+//         @include lg {
+//             display: flex;
+//             justify-content: space-between;
+//             gap: 1rem;
+//         }
+
+//         &-carousel {
+//             @include lg {
+//                 width: 70%;
+
+//                 .carousel-item {
+//                     .item {
+//                         display: block;
+//                         aspect-ratio: 16/7;
+//                         background-image: url(../../assets/img/main_img.webp);
+//                         background-size: cover;
+//                         display: flex;
+//                         flex-direction: column;
+//                         justify-content: end;
+
+
+//                     }
+
+//                     img {
+//                         aspect-ratio: 16/6;
+//                     }
+//                 }
+//             }
+//         }
+
+//         &-list {
+//             background-color: rgba(34, 53, 213, 1);
+//             border-radius: 0;
+
+//             @include lg {
+//                 width: 30%;
+//             }
+
+//             .list-group-item {
+//                 a {
+//                     color: rgba(151, 231, 245, 1);
+//                 }
+
+//                 .list_header {
+//                     color: $text_color-light;
+//                 }
+//             }
+
+//         }
+//     }
+// }
+
+
+.mainCarousel {
+    &_container {
         gap: 1rem;
-        @include lg{
+
+        @include lg {
             display: flex;
             justify-content: space-between;
             gap: 1rem;
         }
-        &-carousel{
-            @include lg{
+
+        .mainCarousel_section {
+            @include lg {
                 width: 70%;
-                .carousel-item{
-                    .item{
-                        display: block;
-                        aspect-ratio: 16/7;
-                        background-image: url(../../assets/img/main_img.webp);
-                        background-size: cover;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: end;
+            }
+
+            .mainCarousel_container {
+                // carousel burda olacaq
+                border: solid;
+                &-carousel {
+                    border: solid red;
+                    @include lg {
+                        .carousel-item {
+                            .item {
+                                display: block;
+                                aspect-ratio: 16/7;
+                                background-image: url(../../assets/img/main_img.webp);
+                                background-size: cover;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: end;
 
 
+                            }
+
+                            img {
+                                aspect-ratio: 16/6;
+                            }
+                        }
                     }
-                    img{
-                        aspect-ratio: 16/6;
+                }
+            }
+
+            &-bottom {
+                display: flex;
+                justify-content: space-between;
+                gap: 1rem;
+
+                .bottom_card {
+                    &-img {
+                        position: relative;
+
+                        span {
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                        }
                     }
                 }
             }
         }
-        &-list{
+
+        &-list {
             background-color: rgba(34, 53, 213, 1);
             border-radius: 0;
-            @include lg{
+
+            @include lg {
                 width: 30%;
             }
-            .list-group-item{
-                a{
+
+            .list-group-item {
+                a {
                     color: rgba(151, 231, 245, 1);
                 }
-                .list_header{
+
+                .list_header {
                     color: $text_color-light;
                 }
             }
-            
+
         }
     }
 }
