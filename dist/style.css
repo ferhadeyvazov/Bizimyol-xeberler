@@ -60,10 +60,6 @@ ul {
   padding: 3rem 0;
 }
 
-.main {
-  padding: 7rem 0;
-}
-
 .disFlex {
   display: flex;
   justify-content: space-between;
@@ -165,7 +161,6 @@ ul {
     position: sticky;
     top: 75px;
     z-index: 10;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
   #navLarge .container {
     display: flex;
@@ -175,7 +170,7 @@ ul {
     color: rgba(0, 0, 0, 0.8);
     text-transform: uppercase;
     font-weight: 600;
-    padding: 0.65rem 0;
+    padding: 1.4rem 0;
   }
 }
 
@@ -468,19 +463,45 @@ ul {
   background: none !important;
 }
 
+.mainCarousel_container {
+  gap: 1rem;
+}
 @media (min-width: 992px) {
   .mainCarousel_container {
     display: flex;
     justify-content: space-between;
+    gap: 1rem;
   }
 }
 @media (min-width: 992px) {
   .mainCarousel_container-carousel {
     width: 70%;
   }
+  .mainCarousel_container-carousel .carousel-item .item {
+    display: block;
+    aspect-ratio: 16/7;
+    background-image: url(../../assets/img/main_img.webp);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+  .mainCarousel_container-carousel .carousel-item img {
+    aspect-ratio: 16/6;
+  }
+}
+.mainCarousel_container-list {
+  background-color: rgb(34, 53, 213);
+  border-radius: 0;
 }
 @media (min-width: 992px) {
   .mainCarousel_container-list {
     width: 30%;
   }
+}
+.mainCarousel_container-list .list-group-item a {
+  color: rgb(151, 231, 245);
+}
+.mainCarousel_container-list .list-group-item .list_header {
+  color: rgb(255, 255, 255);
 }/*# sourceMappingURL=style.css.map */

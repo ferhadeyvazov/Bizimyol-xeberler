@@ -2,19 +2,48 @@
 
 .mainCarousel{
     &_container{
+        gap: 1rem;
         @include lg{
             display: flex;
             justify-content: space-between;
+            gap: 1rem;
         }
         &-carousel{
             @include lg{
                 width: 70%;
+                .carousel-item{
+                    .item{
+                        display: block;
+                        aspect-ratio: 16/7;
+                        background-image: url(../../assets/img/main_img.webp);
+                        background-size: cover;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: end;
+
+
+                    }
+                    img{
+                        aspect-ratio: 16/6;
+                    }
+                }
             }
         }
         &-list{
+            background-color: rgba(34, 53, 213, 1);
+            border-radius: 0;
             @include lg{
                 width: 30%;
             }
+            .list-group-item{
+                a{
+                    color: rgba(151, 231, 245, 1);
+                }
+                .list_header{
+                    color: $text_color-light;
+                }
+            }
+            
         }
     }
 }
