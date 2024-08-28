@@ -60,6 +60,15 @@ ul {
   padding: 3rem 0;
 }
 
+.main {
+  padding: 2rem 0;
+}
+@media (min-width: 992px) {
+  .main {
+    padding: 0;
+  }
+}
+
 .disFlex {
   display: flex;
   justify-content: space-between;
@@ -483,49 +492,74 @@ ul {
     width: 70%;
   }
 }
-.mainCarousel_container .mainCarousel_section .mainCarousel_container {
-  border: solid;
+.mainCarousel_container .mainCarousel_section .mainCarousel_container-carousel .carousel-item .item {
+  display: block;
+  background-image: url(../../assets/img/main_img.webp);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  aspect-ratio: 1/1;
 }
 @media (min-width: 992px) {
   .mainCarousel_container .mainCarousel_section .mainCarousel_container-carousel .carousel-item .item {
-    display: block;
     aspect-ratio: 16/7;
-    background-image: url(../../assets/img/main_img.webp);
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-  }
-  .mainCarousel_container .mainCarousel_section .mainCarousel_container-carousel .carousel-item img {
-    aspect-ratio: 16/6;
   }
 }
 .mainCarousel_container .mainCarousel_section-bottom {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
+  display: none;
 }
-.mainCarousel_container .mainCarousel_section-bottom .bottom_card-img {
-  position: relative;
-}
-.mainCarousel_container .mainCarousel_section-bottom .bottom_card-img span {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  font-size: 14px;
+@media (min-width: 992px) {
+  .mainCarousel_container .mainCarousel_section-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .mainCarousel_container .mainCarousel_section-bottom .bottom_card-img {
+    position: relative;
+    aspect-ratio: 2/1;
+  }
+  .mainCarousel_container .mainCarousel_section-bottom .bottom_card-img span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 14px;
+  }
 }
 .mainCarousel_container-list {
   background-color: rgb(34, 53, 213);
   border-radius: 0;
+  margin-top: 0.5rem;
+  max-height: 35rem;
+  overflow-y: scroll;
+}
+.mainCarousel_container-list::-webkit-scrollbar {
+  width: 5px;
+}
+.mainCarousel_container-list::-webkit-scrollbar-track {
+  background: rgb(221, 221, 221);
+}
+.mainCarousel_container-list::-webkit-scrollbar-thumb {
+  background: rgb(167, 165, 165);
 }
 @media (min-width: 992px) {
   .mainCarousel_container-list {
     width: 30%;
+    margin-top: 0;
   }
 }
-.mainCarousel_container-list .list-group-item a {
+.mainCarousel_container-list .container_list-head {
+  background-color: rgb(34, 53, 213);
+  display: block;
+  padding: 0.5rem 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+.mainCarousel_container-list .scroll_list .list-group-item a {
   color: rgb(151, 231, 245);
 }
-.mainCarousel_container-list .list-group-item .list_header {
+.mainCarousel_container-list .scroll_list .list-group-item .list_header {
   color: rgb(255, 255, 255);
 }/*# sourceMappingURL=style.css.map */

@@ -32,9 +32,12 @@ ul{
 //     max-width: 1600px;
 //     margin-inline: auto;
 // }
-// .main{
-//     padding: 1rem 0;
-// }
+.main{
+    padding: 2rem 0;
+    @include lg{
+        padding: 0;
+    }
+}
 
 .disFlex{
     display: flex;
