@@ -13,4 +13,23 @@
         }
 
     }
+    .video_row{
+        flex-direction: column-reverse;
+        @include lg{
+            flex-direction: row;
+        }
+    }
+}
+
+.video_menu{
+    &-list{
+        .video-card{
+            background: none !important;
+            color: $text_color-light;
+            border: none;
+        }
+    }
+}
+.list-group-item{
+    background: none !important;
 }
