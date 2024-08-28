@@ -279,6 +279,9 @@ ul {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.news .koshe_news-img {
+  aspect-ratio: 16/9;
+}
 .news_card {
   background-color: rgb(246, 246, 246);
   padding: 0.8rem 2rem 3rem 2rem;
