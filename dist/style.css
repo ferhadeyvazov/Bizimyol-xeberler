@@ -609,6 +609,10 @@ ul {
     flex-direction: row;
   }
 }
+.videos_section .video_row-list .list-group .video_menu-list {
+  border: none;
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
 
 .video_menu-list .video-card {
   background: none !important;

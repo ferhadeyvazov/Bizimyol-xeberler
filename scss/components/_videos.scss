@@ -29,7 +29,6 @@
             flex-shrink: 0;
         }
     }
-
     .videos_container{
         @include lg{
             display: flex;
@@ -41,6 +40,14 @@
         flex-direction: column-reverse;
         @include lg{
             flex-direction: row;
+        }
+        &-list{
+            .list-group{
+                .video_menu-list{
+                    border: none;
+                    border-bottom: 1px solid rgba(255, 255, 255, 1);
+                }
+            }
         }
     }
 }
