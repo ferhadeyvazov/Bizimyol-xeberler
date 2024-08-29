@@ -631,6 +631,28 @@ ul {
   background-image: url(../../assets/img/videosImg/videos_img3.png);
   background-size: cover;
   background-position: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.videos_section .videosNews .video_area-subtitle {
+  background-color: #ffffff;
+  padding: 2rem 2rem 1.5rem 2rem;
+  max-width: 600px;
+}
+.videos_section .videosNews .video_area-subtitle h2 {
+  margin-bottom: 4rem;
+}
+.videos_section .videosNews .video_area-subtitle small {
+  margin-right: 2.5rem;
+  font-weight: 500;
+  font-size: 12px;
+}
+.videos_section .videosNews .video_area i {
+  color: #ffffff;
+  font-size: 5rem;
+  margin-right: 3rem;
+  margin-bottom: 2rem;
 }
 
 .video_menu-list .video-card {
