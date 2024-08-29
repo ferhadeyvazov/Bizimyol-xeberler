@@ -595,23 +595,36 @@ ul {
   align-items: center;
   flex-shrink: 0;
 }
-@media (min-width: 992px) {
-  .videos_section .videos_container {
-    display: flex;
-    justify-content: space-between;
-  }
+.videos_section .video_tracker {
+  display: flex;
+  gap: 12px;
 }
-.videos_section .video_row {
-  flex-direction: column-reverse;
+.videos_section .video_tracker-hero {
+  position: relative;
+  aspect-ratio: 100%; /* 1/1 */
 }
-@media (min-width: 992px) {
-  .videos_section .video_row {
-    flex-direction: row;
-  }
+.videos_section .video_tracker-hero i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: #ffffff;
 }
-.videos_section .video_row-list .list-group .video_menu-list {
-  border: none;
-  border-bottom: 1px solid rgb(255, 255, 255);
+.videos_section .video_tracker-hero img {
+  width: 110px;
+}
+.videos_section .video_tracker-description h4 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+.videos_section .video_tracker-description small {
+  font-size: 12px;
+  color: rgb(0, 155, 255);
+}
+.videos_section .video_tracker-description small i {
+  color: #ffffff;
 }
 
 .video_menu-list .video-card {
@@ -622,6 +635,10 @@ ul {
 
 .list-group-item {
   background: none !important;
+  border: none;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .mainCarousel_container {
