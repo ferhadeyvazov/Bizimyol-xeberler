@@ -140,9 +140,15 @@ ul {
     color: rgb(221, 221, 221);
   }
 }
+@media (min-width: 576px) {
+  .header_socialMedia a {
+    color: rgb(135, 134, 121);
+  }
+}
 
 .navbar {
   background-color: rgb(34, 53, 213) !important;
+  padding: 1rem 0;
 }
 @media (min-width: 992px) {
   .navbar {
@@ -151,7 +157,7 @@ ul {
   }
 }
 .navbar .navbar-brand img {
-  width: 130px;
+  width: 222px;
 }
 .navbar i {
   color: #FFFFFF;
@@ -547,6 +553,12 @@ ul {
 .weeklyPhoto_card-footer {
   text-transform: uppercase;
   font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+.weeklyPhoto_card-footer img {
+  width: 1rem;
+  margin: 0 0.5rem;
 }
 .weeklyPhoto_card .view_Photos {
   color: rgb(255, 255, 255);
