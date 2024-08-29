@@ -30,20 +30,73 @@
         }
     }
 
-    .videos_container{
-        @include lg{
+    .video_tracker{
+        display: flex;
+        gap: 12px;
+        &-hero{
+            position: relative;
+            aspect-ratio: 100%; /* 1/1 */
+            i{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 2rem;
+                color: #ffffff;
+            }
+            img{
+                width: 110px;
+            }
+        }
+        &-description{
+            h4{
+                font-weight:600;
+                margin-bottom: 1rem;
+                color: #ffffff;
+            }
+            small{
+                font-size: 12px;
+                color: rgba(0, 155, 255, 1);
+                i{
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+
+    .videosNews{
+        .video_area{
+            aspect-ratio: 4/3; /* 850/536 */
+            background-image: url(../../assets/img/videosImg/videos_img3.png);
+            background-size: cover;
+            background-position: center;
+
             display: flex;
             justify-content: space-between;
-        }
-
-    }
-    .video_row{
-        flex-direction: column-reverse;
-        @include lg{
-            flex-direction: row;
+            align-items: end;
+            &-subtitle{
+                background-color: #ffffff;
+                padding: 2rem 2rem 1.5rem 2rem;
+                max-width: 600px;
+                h2{
+                    margin-bottom: 4rem;
+                }
+                small{
+                    margin-right: 2.5rem;
+                    font-weight: 500;
+                    font-size: 12px;
+                }
+            }
+            i{
+                color: #ffffff;
+                font-size: 5rem;
+                margin-right: 3rem;
+                margin-bottom: 2rem;
+            }
         }
     }
 }
+
 
 .video_menu{
     &-list{
@@ -56,4 +109,8 @@
 }
 .list-group-item{
     background: none !important;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
 }
