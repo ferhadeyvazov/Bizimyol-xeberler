@@ -26,7 +26,7 @@
     }
 
 }
-
+// Main Menu <i class="bi bi-list"></i>
 #navLarge{
     display: none;
     @include lg{
@@ -44,6 +44,15 @@
                 text-transform: uppercase;
                 font-weight: 600;
                 padding: 1.4rem 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .btn{
+                    i{
+                        color: rgba(0, 0, 0, 0.8);
+                        font-size: 18px;
+                    }
+                }
             }            
         }
     }

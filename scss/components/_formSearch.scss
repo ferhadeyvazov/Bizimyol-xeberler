@@ -1,0 +1,12 @@
+@use '../global' as *;
+
+.searchForm{
+    position: absolute;
+    top: -50%;
+    width: 100%;
+}
+
+.searchFormActive{
+    position: static;
+    transition: all .4s ease-out;
+}

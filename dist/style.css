@@ -195,6 +195,13 @@ ul {
     text-transform: uppercase;
     font-weight: 600;
     padding: 1.4rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #navLarge .container .navLarge_link .btn i {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 18px;
   }
 }
 
@@ -800,4 +807,15 @@ ul {
 }
 .mainCarousel_container-list .scroll_list .list-group-item .list_header {
   color: rgb(255, 255, 255);
+}
+
+.searchForm {
+  position: absolute;
+  top: -50%;
+  width: 100%;
+}
+
+.searchFormActive {
+  position: static;
+  transition: all 0.4s ease-out;
 }/*# sourceMappingURL=style.css.map */

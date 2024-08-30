@@ -123,15 +123,24 @@
             </ul>
 
             <ul class="nav justify-content-end d-none d-lg-flex">
-                <li class="nav-item"><a href="#" class="nav-link text-white fw-medium active">
+                <li class="nav-item"><a href="#" class="nav-link text-white fw-medium active" id="searchNews">
                         <i class="bi bi-mic"></i> PODKAST
                     </a></li>
-                <li class="nav-item"><a href="#" class="nav-link">
+                <li class="nav-item"><a href="#" class="nav-link" id="search_icon">
                         <i class="bi bi-search"></i>
                     </a></li>
             </ul>
         </div>
     </nav>
+
+    <!-- SEARCH FORM -->
+    <form class="searchForm input-group mt-3 mb-1 container">
+        <input type="text" class="form-control fw-medium fs-5" placeholder="AXTAR...." aria-label="Recipient's username"
+            aria-describedby="button-addon2">
+        <button class="btn btn-outline-secondary" type="submit" id="button-addon2">
+            <i class="bi bi-search"></i>
+        </button>
+    </form>
 
     <!-- NAVBAR -->
     <nav id="navLarge">
@@ -145,7 +154,24 @@
             <a href="#" class="navLarge_link">Sağlamlıq</a>
             <a href="#" class="navLarge_link">Sosial-İqtisadi</a>
             <a href="#" class="navLarge_link">Mədəniyyət</a>
-            <a href="#" class="navLarge_link"><i class="bi bi-list"></i></a>
+            <div class="dropdown navLarge_link">
+                <button class="btn btn-link btn-sm " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-list"></i>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item text-uppercase fw-semibold" href="#">Dİn</a></li>
+                    <li><a class="dropdown-item text-uppercase fw-semibold" href="#">Avto</a></li>
+                    <li><a class="dropdown-item text-uppercase fw-semibold" href="#">Xalqın səsi</a></li>
+                    <li><a class="dropdown-item text-uppercase fw-semibold" href="#">Yazar</a></li>
+                    <li><a class="dropdown-item text-uppercase fw-semibold" href="#">Sağlamlıq</a></li>
+                    <li><a class="dropdown-item text-uppercase fw-semibold" href="#">Mədəniyyət</a></li>
+                    <li><a class="dropdown-item text-uppercase fw-semibold" href="#">Hadisə</a></li>
+                    <li><a class="dropdown-item text-uppercase fw-semibold" href="#">Turizm</a></li>
+                    <li><a class="dropdown-item text-uppercase fw-semibold" href="#">Rəsmi</a></li>
+                    <li><a class="dropdown-item text-uppercase fw-semibold" href="#">Rəqəmsal</a></li>
+                    <li><a class="dropdown-item text-uppercase fw-semibold" href="#">Maraqlı</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
     <!-- MAİN -->
@@ -162,7 +188,8 @@
                                         <span class="bg-primary text-white text-uppercase px-3 py-1">Siyasət</span>
                                         <span class="bg-dark text-white text-uppercase px-3 py-1">25 Aprel</span>
                                     </div>
-                                    <h1 class="carouselHeadText text-white fw-semibold">"Biz dörd kənd məsələsini heç vaxt yaddan
+                                    <h1 class="carouselHeadText text-white fw-semibold">"Biz dörd kənd məsələsini heç
+                                        vaxt yaddan
                                         çıxarmamışıq" - İlham Əliyev</h1>
                                 </a>
                             </div>
@@ -172,7 +199,8 @@
                                         <span class="bg-primary text-white text-uppercase px-3 py-1">Siyasət</span>
                                         <span class="bg-dark text-white text-uppercase px-3 py-1">25 Aprel</span>
                                     </div>
-                                    <h1 class="carouselHeadText text-white fw-semibold">"Biz dörd kənd məsələsini heç vaxt yaddan
+                                    <h1 class="carouselHeadText text-white fw-semibold">"Biz dörd kənd məsələsini heç
+                                        vaxt yaddan
                                         çıxarmamışıq" - İlham Əliyev</h1>
                                 </a>
 
@@ -568,7 +596,8 @@
                             aria-labelledby="list-home-list">
                             <div class="video_area-subtitle">
                                 <h2>Bakı Şəhər İcra Hakimiyyəti abadlıq işlərinə başladı</h2>
-                                <small class="text-uppercase">12 aprel</small> <small class="text-uppercase">#Siyasət</small>
+                                <small class="text-uppercase">12 aprel</small> <small
+                                    class="text-uppercase">#Siyasət</small>
                             </div>
                             <i class="bi bi-play-circle"></i>
                         </div>
@@ -642,7 +671,8 @@
                         mindən çox insanın iştirakı...
                     </p>
                     <hr />
-                    <p class="weeklyPhoto_card-footer">10 APREL, 2024 - <img class="ratio ratio-1x1 rounded-circle" src="./assets/img/insta_img.png" alt="insta">
+                    <p class="weeklyPhoto_card-footer">10 APREL, 2024 - <img class="ratio ratio-1x1 rounded-circle"
+                            src="./assets/img/insta_img.png" alt="insta">
                         FOTOQRAF: AKIF VƏLİYEV
                     </p>
                     <a class="view_Photos" href="#">Bütün fotolar <i class="bi bi-arrow-right-short"></i></a>
