@@ -1,0 +1,41 @@
+@use '../global' as *;
+
+.xeberCard{
+    &_header{
+        position: relative;
+        aspect-ratio: 16/9;
+        &-tags{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            small{
+                padding: 4px 16px;
+                background-color: rgba(34, 53, 213, 1);
+                color: #ffffff;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                font-size: 14px;
+                i{
+                    font-size: 14px;
+                    margin-right: 4px;
+                    display: inline-block;
+                    justify-self: end;
+                }
+            }
+        }
+    }
+
+    &_body{
+        background-color: #ffffff;
+        padding: .7rem;
+        &-date{
+            margin: 0;
+            font-size: 14px;
+        }
+        &-desc{
+            font-weight: 600;
+            color: $text_color;
+        }
+    }
+}

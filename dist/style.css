@@ -224,6 +224,43 @@ ul {
   gap: 5px;
 }
 
+.xeberCard_header {
+  position: relative;
+  aspect-ratio: 16/9;
+}
+.xeberCard_header-tags {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.xeberCard_header-tags small {
+  padding: 4px 16px;
+  background-color: rgb(34, 53, 213);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+}
+.xeberCard_header-tags small i {
+  font-size: 14px;
+  margin-right: 4px;
+  display: inline-block;
+  justify-self: end;
+}
+.xeberCard_body {
+  background-color: #ffffff;
+  padding: 0.7rem;
+}
+.xeberCard_body-date {
+  margin: 0;
+  font-size: 14px;
+}
+.xeberCard_body-desc {
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+}
+
 .view span {
   text-transform: uppercase;
   font-size: 12px;
@@ -259,10 +296,15 @@ ul {
   }
 }
 .dogmaAz_section-header .view {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  flex-shrink: 0;
+  display: none;
+}
+@media (min-width: 576px) {
+  .dogmaAz_section-header .view {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-shrink: 0;
+  }
 }
 
 .dAzCards {
@@ -589,6 +631,12 @@ ul {
 
 .videos_section {
   background-color: rgb(34, 53, 213);
+  display: none;
+}
+@media (min-width: 992px) {
+  .videos_section {
+    display: block;
+  }
 }
 .videos_section-header {
   gap: 1rem;
@@ -679,6 +727,15 @@ ul {
   font-size: 5rem;
   margin-right: 3rem;
   margin-bottom: 2rem;
+}
+
+.videos_forMobile {
+  display: block;
+}
+@media (min-width: 992px) {
+  .videos_forMobile {
+    display: none;
+  }
 }
 
 .video_menu-list .video-card {

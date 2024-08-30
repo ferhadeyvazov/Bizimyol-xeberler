@@ -26,10 +26,13 @@
     }
 
     .view {
-        display: flex;
-        justify-content: end;
-        align-items: center;
-        flex-shrink: 0;
+        display: none;
+        @include md{
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            flex-shrink: 0;
+        }
     }
 }
 
