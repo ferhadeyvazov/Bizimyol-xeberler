@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bizimyol Xəbərlər">
+    <meta name="keywords" content="Bizimyol Xəbərlər Yeni xəbərlər Ferhad Eyvazov Fərhad Eyvazov Farhad Eyvazov">
     <meta name="author" content="Ferhad Eyvazov">
     <!-- =========BOOTSTRAP V5.3========== -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -41,7 +43,7 @@
         <div class="container">
             <a class="navbar-brand" href="/"><img src="./assets/img/logo/main_logo.png" alt="main_logo"
                     class="logo"></a>
-            <i class="bi bi-three-dots-vertical d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            <i class="bi bi-list d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar" aria-label="Toggle navigation"></i>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
@@ -55,47 +57,53 @@
                         <button class="btn btn-outline-primary" type="submit">Axtar</button>
                     </form>
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">QARABAĞ</a>
+                        <li class="nav-item py-2">
+                            <a class="nav-link-black active" aria-current="page" href="#">QARABAĞ</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">GÜNDƏM</a>
+                        <li class="nav-item py-2">
+                            <a class="nav-link-black" href="#">GÜNDƏM</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">CƏMİYYƏT</a>
+                        <li class="nav-item py-2">
+                            <a class="nav-link-black" href="#">CƏMİYYƏT</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">HADİSƏ</a>
+                        <li class="nav-item py-2">
+                            <a class="nav-link-black" href="#">HADİSƏ</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">SİYASƏT</a>
+                        <li class="nav-item py-2">
+                            <a class="nav-link-black" href="#">SİYASƏT</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">DÜNYA</a>
+                        <li class="nav-item py-2">
+                            <a class="nav-link-black" href="#">DÜNYA</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">SAĞLAMLIQ</a>
+                        <li class="nav-item py-2">
+                            <a class="nav-link-black" href="#">SAĞLAMLIQ</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">SOSİAL-İQTİSADİ</a>
+                        <li class="nav-item py-2">
+                            <a class="nav-link-black" href="#">SOSİAL-İQTİSADİ</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">MƏDƏNİYYƏT</a>
+                        <li class="nav-item py-2">
+                            <a class="nav-link-black" href="#">MƏDƏNİYYƏT</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            <a class="nav-link-black dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 DİGƏR
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">
-                                        <i class="bi bi-mic"></i> PODKAST
-                                    </a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
+                                <li><a class="dropdown-item" href="#">Din</a></li>
+                                <!-- <li>
                                     <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </li> -->
+                                <li><a class="dropdown-item" href="#">Avto</a></li>
+                                <li><a class="dropdown-item" href="#">Xalqın səsi</a></li>
+                                <li><a class="dropdown-item" href="#">Yazar</a></li>
+                                <li><a class="dropdown-item" href="#">Sağlamlıq</a></li>
+                                <li><a class="dropdown-item" href="#">Mədəniyyət</a></li>
+                                <li><a class="dropdown-item" href="#">Hadisə</a></li>
+                                <li><a class="dropdown-item" href="#">Turizm</a></li>
+                                <li><a class="dropdown-item" href="#">Rəsmi</a></li>
+                                <li><a class="dropdown-item" href="#">Rəqəmsal</a></li>
+                                <li><a class="dropdown-item" href="#">Maraqlı</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -115,15 +123,24 @@
             </ul>
 
             <ul class="nav justify-content-end d-none d-lg-flex">
-                <li class="nav-item"><a href="#" class="nav-link text-white fw-medium active">
+                <li class="nav-item"><a href="#" class="nav-link text-white fw-medium active" id="searchNews">
                         <i class="bi bi-mic"></i> PODKAST
                     </a></li>
-                <li class="nav-item"><a href="#" class="nav-link">
+                <li class="nav-item"><a href="#" class="nav-link" id="search_icon">
                         <i class="bi bi-search"></i>
                     </a></li>
             </ul>
         </div>
     </nav>
+
+    <!-- SEARCH FORM -->
+    <form class="searchForm input-group mt-3 mb-1 container">
+        <input type="text" class="form-control fw-medium fs-5" placeholder="AXTAR...." aria-label="Recipient's username"
+            aria-describedby="button-addon2">
+        <button class="btn btn-outline-secondary" type="submit" id="button-addon2">
+            <i class="bi bi-search"></i>
+        </button>
+    </form>
 
     <!-- NAVBAR -->
     <nav id="navLarge">
@@ -137,7 +154,24 @@
             <a href="#" class="navLarge_link">Sağlamlıq</a>
             <a href="#" class="navLarge_link">Sosial-İqtisadi</a>
             <a href="#" class="navLarge_link">Mədəniyyət</a>
-            <a href="#" class="navLarge_link"><i class="bi bi-list"></i></a>
+            <div class="dropdown navLarge_link">
+                <button class="btn btn-link btn-sm " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-list"></i>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item text-uppercase fw-semibold" href="#">Dİn</a></li>
+                    <li><a class="dropdown-item text-uppercase fw-semibold" href="#">Avto</a></li>
+                    <li><a class="dropdown-item text-uppercase fw-semibold" href="#">Xalqın səsi</a></li>
+                    <li><a class="dropdown-item text-uppercase fw-semibold" href="#">Yazar</a></li>
+                    <li><a class="dropdown-item text-uppercase fw-semibold" href="#">Sağlamlıq</a></li>
+                    <li><a class="dropdown-item text-uppercase fw-semibold" href="#">Mədəniyyət</a></li>
+                    <li><a class="dropdown-item text-uppercase fw-semibold" href="#">Hadisə</a></li>
+                    <li><a class="dropdown-item text-uppercase fw-semibold" href="#">Turizm</a></li>
+                    <li><a class="dropdown-item text-uppercase fw-semibold" href="#">Rəsmi</a></li>
+                    <li><a class="dropdown-item text-uppercase fw-semibold" href="#">Rəqəmsal</a></li>
+                    <li><a class="dropdown-item text-uppercase fw-semibold" href="#">Maraqlı</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
     <!-- MAİN -->
@@ -154,7 +188,8 @@
                                         <span class="bg-primary text-white text-uppercase px-3 py-1">Siyasət</span>
                                         <span class="bg-dark text-white text-uppercase px-3 py-1">25 Aprel</span>
                                     </div>
-                                    <h1 class="text-white fw-semibold fs-1">"Biz dörd kənd məsələsini heç vaxt yaddan
+                                    <h1 class="carouselHeadText text-white fw-semibold">"Biz dörd kənd məsələsini heç
+                                        vaxt yaddan
                                         çıxarmamışıq" - İlham Əliyev</h1>
                                 </a>
                             </div>
@@ -164,7 +199,8 @@
                                         <span class="bg-primary text-white text-uppercase px-3 py-1">Siyasət</span>
                                         <span class="bg-dark text-white text-uppercase px-3 py-1">25 Aprel</span>
                                     </div>
-                                    <h1 class="text-white fw-semibold fs-1">"Biz dörd kənd məsələsini heç vaxt yaddan
+                                    <h1 class="carouselHeadText text-white fw-semibold">"Biz dörd kənd məsələsini heç
+                                        vaxt yaddan
                                         çıxarmamışıq" - İlham Əliyev</h1>
                                 </a>
 
@@ -209,7 +245,7 @@
                 </div>
             </div>
 
-            <div class="mainCarousel_container-list">
+            <div class="mainCarousel_container-list d-none d-lg-block">
                 <a class="container_list-head" href="#">
                     <h4 class="text-white text-uppercase list_header">Xəbər Lenti <i class="bi bi-chevron-right"></i>
                     </h4>
@@ -560,7 +596,8 @@
                             aria-labelledby="list-home-list">
                             <div class="video_area-subtitle">
                                 <h2>Bakı Şəhər İcra Hakimiyyəti abadlıq işlərinə başladı</h2>
-                                <small class="text-uppercase">12 aprel</small> <small class="text-uppercase">#Siyasət</small>
+                                <small class="text-uppercase">12 aprel</small> <small
+                                    class="text-uppercase">#Siyasət</small>
                             </div>
                             <i class="bi bi-play-circle"></i>
                         </div>
@@ -634,7 +671,8 @@
                         mindən çox insanın iştirakı...
                     </p>
                     <hr />
-                    <p class="weeklyPhoto_card-footer">10 APREL, 2024 - <img class="ratio ratio-1x1 rounded-circle" src="./assets/img/insta_img.png" alt="insta">
+                    <p class="weeklyPhoto_card-footer">10 APREL, 2024 - <img class="ratio ratio-1x1 rounded-circle"
+                            src="./assets/img/insta_img.png" alt="insta">
                         FOTOQRAF: AKIF VƏLİYEV
                     </p>
                     <a class="view_Photos" href="#">Bütün fotolar <i class="bi bi-arrow-right-short"></i></a>

@@ -4,8 +4,9 @@
     gap: .8rem;
     &_img{
         border-radius: 10px 10px 0 0;
-        aspect-ratio: 1/1;
+        aspect-ratio: 16/9;
         object-fit: cover;
+        object-position: center center;
     }
     .koshe_news-img{
         aspect-ratio: 16/9;

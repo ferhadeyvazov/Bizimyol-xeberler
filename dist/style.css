@@ -65,7 +65,12 @@ ul {
 }
 
 .main {
-  padding: 3rem 0;
+  padding-top: 6rem;
+}
+@media (min-width: 576px) {
+  .main {
+    padding-top: 4rem;
+  }
 }
 @media (min-width: 992px) {
   .main {
@@ -161,7 +166,7 @@ ul {
 }
 .navbar i {
   color: #FFFFFF;
-  font-size: 20px;
+  font-size: 22px;
 }
 .navbar .currency_list a {
   color: #FFFFFF;
@@ -190,6 +195,13 @@ ul {
     text-transform: uppercase;
     font-weight: 600;
     padding: 1.4rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #navLarge .container .navLarge_link .btn i {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 18px;
   }
 }
 
@@ -345,9 +357,11 @@ ul {
 }
 .news_img {
   border-radius: 10px 10px 0 0;
-  aspect-ratio: 1/1;
+  aspect-ratio: 16/9;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
 }
 .news .koshe_news-img {
   aspect-ratio: 16/9;
@@ -709,11 +723,27 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: end;
-  aspect-ratio: 1/1;
+  aspect-ratio: 16/9;
 }
 @media (min-width: 992px) {
   .mainCarousel_container .mainCarousel_section .mainCarousel_container-carousel .carousel-item .item {
     aspect-ratio: 16/7;
+  }
+}
+.mainCarousel_container .mainCarousel_section .mainCarousel_container-carousel .carousel-item .item .alt_Texts {
+  display: none;
+}
+@media (min-width: 992px) {
+  .mainCarousel_container .mainCarousel_section .mainCarousel_container-carousel .carousel-item .item .alt_Texts {
+    display: block;
+  }
+}
+.mainCarousel_container .mainCarousel_section .mainCarousel_container-carousel .carousel-item .item .carouselHeadText {
+  font-size: 1.35rem;
+}
+@media (min-width: 992px) {
+  .mainCarousel_container .mainCarousel_section .mainCarousel_container-carousel .carousel-item .item .carouselHeadText {
+    font-size: 2.5rem;
   }
 }
 .mainCarousel_container .mainCarousel_section-bottom {
@@ -777,4 +807,15 @@ ul {
 }
 .mainCarousel_container-list .scroll_list .list-group-item .list_header {
   color: rgb(255, 255, 255);
+}
+
+.searchForm {
+  position: absolute;
+  top: -50%;
+  width: 100%;
+}
+
+.searchFormActive {
+  position: static;
+  transition: all 0.4s ease-out;
 }/*# sourceMappingURL=style.css.map */

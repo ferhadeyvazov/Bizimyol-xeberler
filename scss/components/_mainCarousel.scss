@@ -1,62 +1,5 @@
 @use '../global' as *;
 
-// .mainCarousel {
-//     &_container {
-//         gap: 1rem;
-
-//         @include lg {
-//             display: flex;
-//             justify-content: space-between;
-//             gap: 1rem;
-//         }
-
-//         &-carousel {
-//             @include lg {
-//                 width: 70%;
-
-//                 .carousel-item {
-//                     .item {
-//                         display: block;
-//                         aspect-ratio: 16/7;
-//                         background-image: url(../../assets/img/main_img.webp);
-//                         background-size: cover;
-//                         display: flex;
-//                         flex-direction: column;
-//                         justify-content: end;
-
-
-//                     }
-
-//                     img {
-//                         aspect-ratio: 16/6;
-//                     }
-//                 }
-//             }
-//         }
-
-//         &-list {
-//             background-color: rgba(34, 53, 213, 1);
-//             border-radius: 0;
-
-//             @include lg {
-//                 width: 30%;
-//             }
-
-//             .list-group-item {
-//                 a {
-//                     color: rgba(151, 231, 245, 1);
-//                 }
-
-//                 .list_header {
-//                     color: $text_color-light;
-//                 }
-//             }
-
-//         }
-//     }
-// }
-
-
 .mainCarousel {
     &_container {
         gap: 1rem;
@@ -87,9 +30,22 @@
                             display: flex;
                             flex-direction: column;
                             justify-content: end;
-                            aspect-ratio: 1/1;
+                            // aspect-ratio: 1/1;
+                            aspect-ratio: 16/9;
                             @include lg{
                                 aspect-ratio: 16/7;
+                            }
+                            .alt_Texts{
+                                display: none;
+                                @include lg{
+                                    display: block;
+                                }
+                            }
+                            .carouselHeadText{
+                                font-size: 1.35rem;
+                                @include lg{
+                                    font-size: 2.5rem;
+                                }
                             }
                         }
 
