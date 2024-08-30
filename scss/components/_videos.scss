@@ -2,6 +2,10 @@
 
 .videos_section{
     background-color: $background;
+    display: none;
+    @include lg{
+        display: block;
+    }
     &-header{
         gap: 1rem;
         .sect-header{
@@ -94,6 +98,16 @@
                 margin-bottom: 2rem;
             }
         }
+    }
+}
+
+.videos_forMobile{
+    @include lg{
+        display: none;
+    }
+    display: block;
+    &-body{
+        
     }
 }
 
