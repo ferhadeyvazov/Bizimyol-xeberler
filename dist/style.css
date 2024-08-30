@@ -240,10 +240,13 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 12px;
+  font-size: 14px;
 }
 .xeberCard_header-tags small i {
-  margin-right: 3px;
+  font-size: 14px;
+  margin-right: 4px;
+  display: inline-block;
+  justify-self: end;
 }
 .xeberCard_body {
   background-color: #ffffff;
@@ -251,6 +254,11 @@ ul {
 }
 .xeberCard_body-date {
   margin: 0;
+  font-size: 14px;
+}
+.xeberCard_body-desc {
+  font-weight: 600;
+  color: rgb(0, 0, 0);
 }
 
 .view span {
@@ -729,6 +737,7 @@ ul {
     display: none;
   }
 }
+
 .video_menu-list .video-card {
   background: none !important;
   color: rgb(255, 255, 255);

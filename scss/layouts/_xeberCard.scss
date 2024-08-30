@@ -1,3 +1,5 @@
+@use '../global' as *;
+
 .xeberCard{
     &_header{
         position: relative;
@@ -13,9 +15,12 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                font-size: 12px;
+                font-size: 14px;
                 i{
-                    margin-right: 3px;
+                    font-size: 14px;
+                    margin-right: 4px;
+                    display: inline-block;
+                    justify-self: end;
                 }
             }
         }
@@ -26,6 +31,11 @@
         padding: .7rem;
         &-date{
             margin: 0;
+            font-size: 14px;
+        }
+        &-desc{
+            font-weight: 600;
+            color: $text_color;
         }
     }
 }
