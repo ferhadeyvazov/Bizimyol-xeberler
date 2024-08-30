@@ -1,24 +1,27 @@
 @use "../global" as *;
 
-.navbar{
+.navbar {
     background-color: $background !important;
     padding: 1rem 0;
-    @include lg{
+
+    @include lg {
         top: 0;
         position: sticky;
     }
-    .navbar-brand{
-        img{
+
+    .navbar-brand {
+        img {
             width: 222px;
         }
     }
-    i{
+
+    i {
         color: #FFFFFF;
         font-size: 22px;
     }
 
-    .currency_list{
-        a{
+    .currency_list {
+        a {
             color: #FFFFFF;
             font-weight: 400;
             font-size: 18px;
@@ -26,20 +29,24 @@
     }
 
 }
+
 // Main Menu <i class="bi bi-list"></i>
-#navLarge{
+#navLarge {
     display: none;
-    @include lg{
+
+    @include lg {
         background-color: #FFFFFF;
         width: 100%;
         display: flex;
         position: sticky;
         top: 75px;
         z-index: 10;
-        .container{
+
+        .container {
             display: flex;
             justify-content: space-between;
-            .navLarge_link{
+
+            .navLarge_link {
                 color: rgba(0, 0, 0, 0.8);
                 text-transform: uppercase;
                 font-weight: 600;
@@ -47,13 +54,14 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                .btn{
-                    i{
+
+                .btn {
+                    i {
                         color: rgba(0, 0, 0, 0.8);
                         font-size: 18px;
                     }
                 }
-            }            
+            }
         }
     }
 }
