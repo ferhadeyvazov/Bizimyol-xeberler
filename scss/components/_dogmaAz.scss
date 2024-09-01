@@ -51,7 +51,7 @@
             scroll-snap-type: x mandatory;
             scroll-behavior: smooth;
             ::-webkit-scrollbar{
-                display: none;
+                display: none !important;
             }
             .dAzCards_scroll-article {
                 flex: 0 0 100%;

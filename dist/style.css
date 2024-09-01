@@ -350,7 +350,7 @@ ul {
   scroll-behavior: smooth;
 }
 .dAzCards_scroll .ferhad ::-webkit-scrollbar {
-  display: none;
+  display: none !important;
 }
 .dAzCards_scroll .ferhad .dAzCards_scroll-article {
   flex: 0 0 100%;
