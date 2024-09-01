@@ -224,16 +224,43 @@ ul {
   gap: 5px;
 }
 
-.xeberCard_header {
+.videos_forMobile-body {
+  overflow-y: hidden;
+  overflow-x: scroll !important;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  display: flex;
+  gap: 1rem;
+}
+.videos_forMobile-body::-webkit-scrollbar {
+  height: 5px;
+}
+.videos_forMobile-body::-webkit-scrollbar-track {
+  background: rgb(221, 221, 221);
+}
+.videos_forMobile-body::-webkit-scrollbar-thumb {
+  background: rgb(167, 165, 165);
+  border-radius: 15px;
+}
+.videos_forMobile-body .xeberCard {
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+}
+@media (min-width: 576px) {
+  .videos_forMobile-body .xeberCard {
+    flex: 0 0 50%;
+  }
+}
+.videos_forMobile-body .xeberCard_header {
   position: relative;
   aspect-ratio: 16/9;
 }
-.xeberCard_header-tags {
+.videos_forMobile-body .xeberCard_header-tags {
   position: absolute;
   bottom: 0;
   left: 0;
 }
-.xeberCard_header-tags small {
+.videos_forMobile-body .xeberCard_header-tags small {
   padding: 4px 16px;
   background-color: rgb(34, 53, 213);
   color: #ffffff;
@@ -242,21 +269,21 @@ ul {
   justify-content: space-between;
   font-size: 14px;
 }
-.xeberCard_header-tags small i {
+.videos_forMobile-body .xeberCard_header-tags small i {
   font-size: 14px;
   margin-right: 4px;
   display: inline-block;
   justify-self: end;
 }
-.xeberCard_body {
+.videos_forMobile-body .xeberCard_body {
   background-color: #ffffff;
   padding: 0.7rem;
 }
-.xeberCard_body-date {
+.videos_forMobile-body .xeberCard_body-date {
   margin: 0;
   font-size: 14px;
 }
-.xeberCard_body-desc {
+.videos_forMobile-body .xeberCard_body-desc {
   font-weight: 600;
   color: rgb(0, 0, 0);
 }

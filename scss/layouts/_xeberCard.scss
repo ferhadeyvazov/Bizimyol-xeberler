@@ -1,41 +1,75 @@
 @use '../global' as *;
 
-.xeberCard{
-    &_header{
-        position: relative;
-        aspect-ratio: 16/9;
-        &-tags{
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            small{
-                padding: 4px 16px;
-                background-color: rgba(34, 53, 213, 1);
-                color: #ffffff;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                font-size: 14px;
-                i{
+.videos_forMobile-body {
+    overflow-y: hidden;
+    overflow-x: scroll !important;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    display: flex;
+    gap: 1rem;
+
+    &::-webkit-scrollbar {
+        height: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: rgba(221, 221, 221, 1);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: rgba(167, 165, 165, 1);
+        border-radius: 15px;
+    }
+
+    .xeberCard {
+        flex: 0 0 100%;
+        scroll-snap-align: center;
+
+        @include md {
+            flex: 0 0 50%;
+        }
+
+        &_header {
+            position: relative;
+            aspect-ratio: 16/9;
+
+            &-tags {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+
+                small {
+                    padding: 4px 16px;
+                    background-color: rgba(34, 53, 213, 1);
+                    color: #ffffff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
                     font-size: 14px;
-                    margin-right: 4px;
-                    display: inline-block;
-                    justify-self: end;
+
+                    i {
+                        font-size: 14px;
+                        margin-right: 4px;
+                        display: inline-block;
+                        justify-self: end;
+                    }
                 }
             }
         }
-    }
 
-    &_body{
-        background-color: #ffffff;
-        padding: .7rem;
-        &-date{
-            margin: 0;
-            font-size: 14px;
-        }
-        &-desc{
-            font-weight: 600;
-            color: $text_color;
+        &_body {
+            background-color: #ffffff;
+            padding: .7rem;
+
+            &-date {
+                margin: 0;
+                font-size: 14px;
+            }
+
+            &-desc {
+                font-weight: 600;
+                color: $text_color;
+            }
         }
     }
 }
