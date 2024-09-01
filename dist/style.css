@@ -895,9 +895,20 @@ ul {
 .sect_news_img {
   margin-bottom: 1rem;
   border-radius: 12px;
+  aspect-ratio: 16/9;
 }
 .sect_news .news_paragraph {
   margin: 1rem 0;
   font-weight: 400;
-  font-size: 25px;
+  font-size: 1rem;
+}
+@media (min-width: 576px) {
+  .sect_news .news_paragraph {
+    font-size: 25px;
+  }
+}
+.sect_news .paragraph_head {
+  margin: 2rem 0;
+  font-weight: 700;
+  line-height: 28px;
 }/*# sourceMappingURL=style.css.map */

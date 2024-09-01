@@ -16,10 +16,19 @@
     &_img{
         margin-bottom: 1rem;
         border-radius: 12px;
+        aspect-ratio: 16/9;
     }
     .news_paragraph{
         margin: 1rem 0;
         font-weight: 400;
-        font-size: 25px;
+        font-size: 1rem;
+        @include md {
+            font-size: 25px;
+        }
+    }
+    .paragraph_head{
+        margin: 2rem 0;
+        font-weight: 700;
+        line-height: 28px;
     }
 }
