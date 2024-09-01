@@ -44,11 +44,6 @@
     
     &_scroll {
         position: relative;
-        &::after{
-            position: absolute;
-            width: 100%;
-            bottom: 0;
-        }
         .ferhad{
             display: flex;
             overflow-y: hidden;
@@ -84,7 +79,7 @@
             position: absolute;
             bottom: 1.3rem;
             right: 1.3rem;
-            z-index: 20;
+            z-index: 5;
             display: flex;
             gap: 8px;
 
@@ -94,5 +89,12 @@
             }
         }
 
+    }
+    .second_scroll{
+        .ferhad{
+            .dAzCards_scroll-article{
+                background-image: url(../../assets/img/dogma/xudaferin_korpusu.png);
+            }
+        }
     }
 }

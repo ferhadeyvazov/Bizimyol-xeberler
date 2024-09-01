@@ -342,11 +342,6 @@ ul {
 .dAzCards_scroll {
   position: relative;
 }
-.dAzCards_scroll::after {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-}
 .dAzCards_scroll .ferhad {
   display: flex;
   overflow-y: hidden;
@@ -380,13 +375,16 @@ ul {
   position: absolute;
   bottom: 1.3rem;
   right: 1.3rem;
-  z-index: 20;
+  z-index: 5;
   display: flex;
   gap: 8px;
 }
 .dAzCards_scroll .arrowDiv i {
   color: #948980;
   font-size: 1.2rem;
+}
+.dAzCards .second_scroll .ferhad .dAzCards_scroll-article {
+  background-image: url(../../assets/img/dogma/xudaferin_korpusu.png);
 }
 
 .info_section-header {
