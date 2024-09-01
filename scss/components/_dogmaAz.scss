@@ -27,7 +27,8 @@
 
     .view {
         display: none;
-        @include md{
+
+        @include md {
             display: flex;
             justify-content: end;
             align-items: center;
@@ -38,29 +39,52 @@
 
 .dAzCards {
     display: grid;
-    aspect-ratio: 1/1;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: .8rem;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-
-    @include md {
-        aspect-ratio: 4/1;
-        // grid-template-columns: repeat(2, 1fr);
-    }
-
-    &_card {
-        background-image: url(../../assets/img/dogma/bulvar.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        align-items: end;
-        padding: 1.3rem;
-
-        span {
-            font-weight: 600;
-            font-size: 1.2rem;
-            color: $text_color-light;
+    
+    &_scroll {
+        position: relative;
+        &::after{
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+        .ferhad{
+            display: flex;
+            overflow-y: hidden;
+            overflow-x: scroll !important;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+            ::-webkit-scrollbar{
+                display: none;
+            }
+            .dAzCards_scroll-article {
+                flex: 0 0 100%;
+                scroll-snap-align: center;
+                width: 100%;
+                aspect-ratio: 2/1;
+                background-image: url(../../assets/img/dogma/bulvar.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                align-items: end;
+                padding: 1.3rem;
+    
+                span {
+                    font-weight: 600;
+                    font-size: 1.2rem;
+                    color: $text_color-light;
+                }
+            }
+            .second_scroll-article{
+                background-image: url(../../assets/img/dogma/xudaferin_korpusu.png);
+            }
         }
 
         .arrowDiv {
+            position: absolute;
+            bottom: 1.3rem;
+            right: 1.3rem;
+            z-index: 20;
             display: flex;
             gap: 8px;
 

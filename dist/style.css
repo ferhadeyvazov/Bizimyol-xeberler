@@ -336,32 +336,55 @@ ul {
 
 .dAzCards {
   display: grid;
-  aspect-ratio: 1/1;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 0.8rem;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
-@media (min-width: 576px) {
-  .dAzCards {
-    aspect-ratio: 4/1;
-  }
+.dAzCards_scroll {
+  position: relative;
 }
-.dAzCards_card {
+.dAzCards_scroll::after {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+.dAzCards_scroll .ferhad {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll !important;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+.dAzCards_scroll .ferhad ::-webkit-scrollbar {
+  display: none;
+}
+.dAzCards_scroll .ferhad .dAzCards_scroll-article {
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+  width: 100%;
+  aspect-ratio: 2/1;
   background-image: url(../../assets/img/dogma/bulvar.png);
   background-repeat: no-repeat;
   background-size: cover;
   align-items: end;
   padding: 1.3rem;
 }
-.dAzCards_card span {
+.dAzCards_scroll .ferhad .dAzCards_scroll-article span {
   font-weight: 600;
   font-size: 1.2rem;
   color: rgb(255, 255, 255);
 }
-.dAzCards_card .arrowDiv {
+.dAzCards_scroll .ferhad .second_scroll-article {
+  background-image: url(../../assets/img/dogma/xudaferin_korpusu.png);
+}
+.dAzCards_scroll .arrowDiv {
+  position: absolute;
+  bottom: 1.3rem;
+  right: 1.3rem;
+  z-index: 20;
   display: flex;
   gap: 8px;
 }
-.dAzCards_card .arrowDiv i {
+.dAzCards_scroll .arrowDiv i {
   color: #948980;
   font-size: 1.2rem;
 }
