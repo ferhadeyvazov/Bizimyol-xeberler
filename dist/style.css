@@ -875,4 +875,29 @@ ul {
 .searchFormActive {
   position: static;
   transition: all 0.4s ease-out;
+}
+
+.sect_news_head {
+  margin: 1rem 0;
+  font-weight: 600;
+  font-size: 1.32rem;
+}
+@media (min-width: 576px) {
+  .sect_news_head {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  .sect_news_head {
+    font-size: 2.62rem;
+  }
+}
+.sect_news_img {
+  margin-bottom: 1rem;
+  border-radius: 12px;
+}
+.sect_news .news_paragraph {
+  margin: 1rem 0;
+  font-weight: 400;
+  font-size: 25px;
 }/*# sourceMappingURL=style.css.map */
