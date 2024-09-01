@@ -49,18 +49,24 @@
             .navLarge_link {
                 color: rgba(0, 0, 0, 0.8);
                 text-transform: uppercase;
-                font-weight: 600;
+                font-weight: 500;
+                font-size: 18px;
                 padding: 1.4rem 0;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-
+                
                 .btn {
                     i {
                         color: rgba(0, 0, 0, 0.8);
-                        font-size: 18px;
+                        font-weight: 400;
                     }
                 }
+            }
+            .v2{
+                font-family: Britanica-Bold!important;
+                font-weight: 400 !important;
+
             }
         }
     }

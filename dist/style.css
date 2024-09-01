@@ -33,6 +33,10 @@
   src: url(../../assets/fonts/Britanica\ Heavy.woff);
   font-weight: 800;
 }
+@font-face {
+  font-family: Britanica-Bold;
+  src: url(../../assets/fonts/Britanica\ Bold.woff);
+}
 * {
   margin: 0;
   padding: 0;
@@ -193,7 +197,8 @@ ul {
   #navLarge .container .navLarge_link {
     color: rgba(0, 0, 0, 0.8);
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 18px;
     padding: 1.4rem 0;
     display: flex;
     align-items: center;
@@ -201,7 +206,11 @@ ul {
   }
   #navLarge .container .navLarge_link .btn i {
     color: rgba(0, 0, 0, 0.8);
-    font-size: 18px;
+    font-weight: 400;
+  }
+  #navLarge .container .v2 {
+    font-family: Britanica-Bold !important;
+    font-weight: 400 !important;
   }
 }
 
