@@ -388,6 +388,15 @@ a {
   font-size: 1.2rem;
   color: rgb(255, 255, 255);
 }
+.dAzCards_scroll .ferhad .dAzFirst1 {
+  background-image: url(../../assets/img/dogma/bulvar.png);
+}
+.dAzCards_scroll .ferhad .dAzFirst2 {
+  background-image: url(../../assets/img/dogma/Night_Time_In_Baku.webp);
+}
+.dAzCards_scroll .ferhad .dAzFirst3 {
+  background-image: url(../../assets/img/dogma/Night_Time_In_Baku.webp);
+}
 .dAzCards_scroll .ferhad .second_scroll-article {
   background-image: url(../../assets/img/dogma/xudaferin_korpusu.png);
 }
@@ -404,7 +413,16 @@ a {
   font-size: 1.2rem;
   cursor: pointer;
 }
-.dAzCards .second_scroll .ferhad .dAzCards_scroll-article {
+.dAzCards .second_scroll .ferhad .dAzSec1 {
+  background-image: url(../../assets/img/dogma/xudaferin_korpusu.png);
+}
+.dAzCards .second_scroll .ferhad .dAzSec2 {
+  background-image: url(../../assets/img/dogma/Night_Time_In_Baku.webp);
+}
+.dAzCards .second_scroll .ferhad .dAzSec3 {
+  background-image: url(../../assets/img/dogma/xudaferin_korpusu.png);
+}
+.dAzCards .second_scroll .ferhad .dAzSec4 {
   background-image: url(../../assets/img/dogma/xudaferin_korpusu.png);
 }
 
