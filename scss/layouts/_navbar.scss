@@ -11,7 +11,10 @@
 
     .navbar-brand {
         img {
-            width: 222px;
+            width: 130px;
+            @include md{
+                width: 222px;
+            }
         }
     }
 

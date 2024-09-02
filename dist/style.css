@@ -171,7 +171,12 @@ a {
   }
 }
 .navbar .navbar-brand img {
-  width: 222px;
+  width: 130px;
+}
+@media (min-width: 576px) {
+  .navbar .navbar-brand img {
+    width: 222px;
+  }
 }
 .navbar i {
   color: #FFFFFF;
@@ -552,12 +557,16 @@ a {
 .aside .koshe_header {
   background-color: rgb(126, 211, 72);
   border-radius: 10px;
-  color: #FFFFFF;
-  padding: 2.2rem 1.5rem;
+  padding: 1.5rem 2.2rem;
   margin-bottom: 1rem;
 }
 .aside .koshe_header h2 {
+  color: #FFFFFF;
   font-weight: 600;
+  font-size: 48px;
+  line-height: 48px;
+  text-wrap: balance;
+  line-height: 48px;
 }
 .aside .card {
   background-color: rgb(38, 177, 112);
@@ -595,9 +604,20 @@ a {
   background-color: rgb(126, 211, 72);
   padding: 1rem 1.5rem;
   border-radius: 10px;
-  color: #FFFFFF;
+}
+.aside .koshe_footer a {
+  color: rgb(255, 255, 255);
+}
+.aside .koshe_footer a h3 {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 20px;
+}
+.aside .koshe_footer a h3 i {
+  font-size: 1rem;
 }
 
 .weekly_photo-header {
