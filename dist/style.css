@@ -61,6 +61,10 @@ ul {
   padding: 0;
 }
 
+a {
+  color: #212529;
+}
+
 .section {
   padding: 3rem 0;
 }
@@ -393,6 +397,7 @@ ul {
 .dAzCards_scroll .arrowDiv i {
   color: #948980;
   font-size: 1.2rem;
+  cursor: pointer;
 }
 .dAzCards .second_scroll .ferhad .dAzCards_scroll-article {
   background-image: url(../../assets/img/dogma/xudaferin_korpusu.png);
@@ -781,7 +786,7 @@ ul {
   font-weight: 500;
   font-size: 12px;
 }
-.videos_section .videosNews .video_area i {
+.videos_section .videosNews .video_area-playBtn {
   color: #ffffff;
   font-size: 5rem;
   margin-right: 3rem;
@@ -862,6 +867,12 @@ ul {
     font-size: 2.5rem;
   }
 }
+.mainCarousel_container .mainCarousel_section .mainCarousel_container-carousel .carousel-item .item2 {
+  background-image: url(../../assets/img/main_img2.webp);
+}
+.mainCarousel_container .mainCarousel_section .mainCarousel_container-carousel .carousel-item .item3 {
+  background-image: url(../../assets/img/main_img3.webp);
+}
 .mainCarousel_container .mainCarousel_section-bottom {
   display: none;
 }
@@ -881,6 +892,24 @@ ul {
     left: 0;
     font-size: 14px;
   }
+}
+.mainCarousel_container .mainCarousel_section-indicators {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+  gap: 10px;
+}
+@media (min-width: 992px) {
+  .mainCarousel_container .mainCarousel_section-indicators {
+    display: none;
+  }
+}
+.mainCarousel_container .mainCarousel_section-indicators .indicatorBtn {
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(34, 53, 213);
+  color: #ffffff;
+  font-weight: 600;
+  padding: 0.4rem 0;
 }
 .mainCarousel_container-list {
   background-color: rgb(34, 53, 213);
@@ -954,7 +983,6 @@ ul {
 .sect_news_img {
   margin-bottom: 1rem;
   border-radius: 12px;
-  aspect-ratio: 16/9;
 }
 .sect_news .news_paragraph {
   margin: 1rem 0;

@@ -14,11 +14,13 @@
             display: flex;
             flex-direction: column;
             gap: 1rem;
+
             @include lg {
                 width: 70%;
             }
 
             .mainCarousel_container {
+
                 // carousel burda olacaq
                 &-carousel {
                     .carousel-item {
@@ -32,21 +34,34 @@
                             justify-content: end;
                             // aspect-ratio: 1/1;
                             aspect-ratio: 16/9;
-                            @include lg{
+
+                            @include lg {
                                 aspect-ratio: 16/7;
                             }
-                            .alt_Texts{
+
+                            .alt_Texts {
                                 display: none;
-                                @include lg{
+
+                                @include lg {
                                     display: block;
                                 }
                             }
-                            .carouselHeadText{
+
+                            .carouselHeadText {
                                 font-size: 1.35rem;
-                                @include lg{
+
+                                @include lg {
                                     font-size: 2.5rem;
                                 }
                             }
+                        }
+
+                        .item2 {
+                            background-image: url(../../assets/img/main_img2.webp);
+                        }
+
+                        .item3 {
+                            background-image: url(../../assets/img/main_img3.webp);
                         }
 
                     }
@@ -55,16 +70,17 @@
 
             &-bottom {
                 display: none;
-                @include lg{
+
+                @include lg {
                     display: flex;
                     justify-content: space-between;
                     gap: 1rem;
-    
+
                     .bottom_card {
                         &-img {
                             position: relative;
                             aspect-ratio: 2/1;
-    
+
                             span {
                                 position: absolute;
                                 bottom: 0;
@@ -76,6 +92,26 @@
 
                 }
             }
+
+            // Number Buttons for Mobile
+            &-indicators {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+                gap: 10px;
+
+                @include lg {
+                    display: none;
+                }
+
+                .indicatorBtn {
+                    border-radius: 5px;
+                    border: none;
+                    background-color: rgba(34, 53, 213, 1);
+                    color: #ffffff;
+                    font-weight: 600;
+                    padding: .4rem 0;
+                }
+            }
         }
 
         &-list {
@@ -85,20 +121,25 @@
             padding: 0 2rem;
             max-height: 35rem;
             overflow-y: scroll;
-            &::-webkit-scrollbar{
+
+            &::-webkit-scrollbar {
                 width: 5px;
             }
-            &::-webkit-scrollbar-track{
+
+            &::-webkit-scrollbar-track {
                 background: rgba(221, 221, 221, 1);
             }
-            &::-webkit-scrollbar-thumb{
+
+            &::-webkit-scrollbar-thumb {
                 background: rgba(167, 165, 165, 1);
             }
+
             @include lg {
                 width: 30%;
                 margin-top: 0;
             }
-            .container_list-head{
+
+            .container_list-head {
                 background-color: rgba(34, 53, 213, 1);
                 display: block;
                 padding: .5rem 0;
@@ -106,15 +147,17 @@
                 top: 0;
                 z-index: 3;
             }
-            .scroll_list{
+
+            .scroll_list {
                 .list-group-item {
                     border: none;
                     border-bottom: 1px solid rgba(221, 221, 221, 1);
                     padding: 1rem 0;
+
                     a {
                         color: rgba(151, 231, 245, 1);
                     }
-    
+
                     .list_header {
                         color: $text_color-light;
                     }
