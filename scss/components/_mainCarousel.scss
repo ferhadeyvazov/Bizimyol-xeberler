@@ -83,7 +83,12 @@
                         &-img {
                             position: relative;
                             aspect-ratio: 2/1;
-
+                            .bottom_img{
+                                img{
+                                    display: block;
+                                    aspect-ratio: 4/3;
+                                }
+                            }
                             span {
                                 position: absolute;
                                 bottom: 0;
