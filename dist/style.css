@@ -237,10 +237,16 @@ a {
   font-size: 1.5rem;
   color: rgb(255, 255, 255);
 }
+.footer_menu-link .nav-link:hover {
+  color: rgb(255, 255, 255);
+}
 .footer_info {
   display: flex;
   flex-direction: column;
   gap: 5px;
+}
+.footer_info .nav-link:hover {
+  color: rgb(255, 255, 255);
 }
 
 .videos_forMobile-body {

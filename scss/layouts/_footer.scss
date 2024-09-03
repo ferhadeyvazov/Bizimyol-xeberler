@@ -14,9 +14,23 @@
         font-size: 1.5rem;
         color:rgba(255, 255, 255, 1);
     }
+    &_menu{
+        &-link{
+            .nav-link{
+                &:hover{
+                    color: $text_color-light;
+                }
+            }
+        }   
+    }
     &_info{
         display: flex;
         flex-direction: column;
         gap: 5px;
+        .nav-link{
+            &:hover{
+                color: $text_color-light;
+            }
+        }
     }
 }
