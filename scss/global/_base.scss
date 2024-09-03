@@ -64,6 +64,11 @@ a{
     font-size: 18px;
     font-weight: 400;
     color: rgba(255, 255, 255, 1);
+    &:focus,
+    &:hover{
+        color: rgba(255, 255, 255, 1);
+        text-decoration: none;
+    }
 }
 .nav-link-black{
     font-size: 18px;

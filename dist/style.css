@@ -108,6 +108,10 @@ a {
   font-weight: 400;
   color: rgb(255, 255, 255);
 }
+.nav-link:focus, .nav-link:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
 
 .nav-link-black {
   font-size: 18px;
@@ -237,16 +241,28 @@ a {
   font-size: 1.5rem;
   color: rgb(255, 255, 255);
 }
-.footer_menu-link .nav-link:hover {
+.footer_menu-link .nav-link {
+  color: rgb(255, 255, 255) !important;
+}
+.footer_menu-link .nav-link:hover, .footer_menu-link .nav-link:focus {
+  color: rgb(255, 255, 255) !important;
+  text-decoration: none;
+}
+.footer_menu-link a {
   color: rgb(255, 255, 255);
+}
+.footer_menu-link a:hover, .footer_menu-link a:focus {
+  color: rgb(255, 255, 255) !important;
+  text-decoration: none;
 }
 .footer_info {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
-.footer_info .nav-link:hover {
-  color: rgb(255, 255, 255);
+.footer_info .nav-link:hover, .footer_info .nav-link:focus {
+  color: rgb(255, 255, 255) !important;
+  text-decoration: none;
 }
 
 .videos_forMobile-body {

@@ -17,8 +17,19 @@
     &_menu{
         &-link{
             .nav-link{
-                &:hover{
-                    color: $text_color-light;
+                color: $text_color-light !important;
+                &:hover,
+                &:focus{
+                    color: $text_color-light !important;
+                    text-decoration: none;
+                }
+            }
+            a{
+                color: $text_color-light;
+                &:hover,
+                &:focus{
+                    color: $text_color-light !important;
+                    text-decoration: none;
                 }
             }
         }   
@@ -28,8 +39,10 @@
         flex-direction: column;
         gap: 5px;
         .nav-link{
-            &:hover{
-                color: $text_color-light;
+            &:hover,
+            &:focus{
+                color: $text_color-light !important;
+                text-decoration: none;
             }
         }
     }
