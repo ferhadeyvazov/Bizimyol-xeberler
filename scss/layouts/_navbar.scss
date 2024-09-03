@@ -58,11 +58,18 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                
                 .btn {
                     i {
                         color: rgba(0, 0, 0, 0.8);
                         font-weight: 400;
+                    }
+                }
+                &-alt{
+                    li{
+                        a{
+                            font-size: 18px;
+                            color: rgba(0, 0, 0, 0.8);
+                        }
                     }
                 }
             }
