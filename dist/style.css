@@ -922,10 +922,13 @@ a {
   }
 }
 .mainCarousel_container .mainCarousel_section .mainCarousel_container-carousel .carousel-item .item2 {
-  background-image: url(../../assets/img/main_img2.webp);
+  background-image: url(../../assets/img/main_img4.webp);
 }
 .mainCarousel_container .mainCarousel_section .mainCarousel_container-carousel .carousel-item .item3 {
   background-image: url(../../assets/img/main_img3.webp);
+}
+.mainCarousel_container .mainCarousel_section .mainCarousel_container-carousel .carousel-item .item4 {
+  background-image: url(../../assets/img/main_img2.webp);
 }
 .mainCarousel_container .mainCarousel_section-bottom {
   display: none;
