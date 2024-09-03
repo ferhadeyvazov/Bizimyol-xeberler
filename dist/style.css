@@ -915,6 +915,10 @@ a {
     width: 70%;
   }
 }
+.mainCarousel_container .mainCarousel_section .mainCarousel_container-carousel .carousel-item {
+  width: 100%;
+  margin-right: -100%;
+}
 .mainCarousel_container .mainCarousel_section .mainCarousel_container-carousel .carousel-item .item {
   display: block;
   background-image: url(../../assets/img/main_img.webp);

@@ -24,6 +24,8 @@
                 // carousel burda olacaq
                 &-carousel {
                     .carousel-item {
+                        width: 100%;
+                        margin-right: -100%;
                         .item {
                             display: block;
                             background-image: url(../../assets/img/main_img.webp);
