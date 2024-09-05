@@ -23,15 +23,37 @@
 
                 // carousel burda olacaq
                 .owl-carousel{
+                    .owl-item{
+                        overflow: hidden;
+                    }
                     .owlItem{
+                        width: 100% !important;
                         background-size: cover;
                         background-position: center;
                         aspect-ratio: 16/9;
                         display: flex;
                         flex-direction: column;
                         justify-content: end;
+                        position: relative;
+                        padding: 0 .5rem;
+                        @include md{
+                            padding: 1rem 1.5rem;
+                        }
                         @include lg{
                             // aspect-ratio: 16/7;
+                            padding: 1rem 1.5rem;
+                        }
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            left: 0;
+                            bottom: 0;
+                            width: 100%;
+                            background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 60%);
+                            opacity: 1;
+                            transition: all .5s;
+                            height: 50%;
+                            // z-index: 1;
                         }
                         .alt_Texts{
                             display: none;
@@ -41,23 +63,30 @@
                         }
                         .carouselHeadText{
                             font-size: 1.35rem;
+                            text-wrap: balance;
+                            font-weight: 600 !important;
+                            z-index: 1;
+                            @include md{
+                                font-size: 2rem;
+                            }
                             @include lg{
+                                text-wrap: unset;
                                 font-size: 2.5rem;
                             }
                         }
                     }
-                    .owlItem1{
-                        background-image: url(../../assets/img/main_img.webp);
-                    }
-                    .owlItem2{
-                        background-image: url(../../assets/img/main_img2.webp);
-                    }
-                    .owlItem3{
-                        background-image: url(../../assets/img/main_img3.webp);
-                    }
-                    .owlItem4{
-                        background-image: url(../../assets/img/main_img4.webp);
-                    }
+                    // .owlItem1{
+                    //     // background-image: url(../../assets/img/main_img.webp);
+                    // }
+                    // .owlItem2{
+                    //     background-image: url(../../assets/img/main_img2.webp);
+                    // }
+                    // .owlItem3{
+                    //     background-image: url(../../assets/img/main_img3.webp);
+                    // }
+                    // .owlItem4{
+                    //     background-image: url(../../assets/img/main_img4.webp);
+                    // }
                 }
             }
 

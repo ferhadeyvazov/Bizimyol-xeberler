@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $(".owl-carousel").owlCarousel({
         center: true,
-        margin: 10,
+        margin: 12,
         items: 1,
         loop: true,
         autoplay: true,
