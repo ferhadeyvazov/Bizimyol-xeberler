@@ -912,7 +912,7 @@ a {
 }
 @media (min-width: 992px) {
   .mainCarousel_container .mainCarousel_section {
-    width: 70%;
+    width: 69%;
   }
 }
 .mainCarousel_container .mainCarousel_section .mainCarousel_container .owl-carousel .owl-item {
