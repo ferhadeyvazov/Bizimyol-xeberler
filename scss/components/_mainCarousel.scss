@@ -22,53 +22,41 @@
             .mainCarousel_container {
 
                 // carousel burda olacaq
-                &-carousel {
-                    .carousel-item {
-                        width: 100%;
-                        margin-right: -100%;
-                        .item {
-                            display: block;
-                            background-image: url(../../assets/img/main_img.webp);
-                            background-size: cover;
-                            background-position: center;
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: end;
-                            // aspect-ratio: 1/1;
-                            aspect-ratio: 16/9;
-
-                            @include lg {
-                                aspect-ratio: 16/7;
-                            }
-
-                            .alt_Texts {
-                                display: none;
-
-                                @include lg {
-                                    display: block;
-                                }
-                            }
-
-                            .carouselHeadText {
-                                font-size: 1.35rem;
-
-                                @include lg {
-                                    font-size: 2.5rem;
-                                }
+                .owl-carousel{
+                    .owlItem{
+                        background-size: cover;
+                        background-position: center;
+                        aspect-ratio: 16/9;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: end;
+                        @include lg{
+                            // aspect-ratio: 16/7;
+                        }
+                        .alt_Texts{
+                            display: none;
+                            @include lg{
+                                display: block;
                             }
                         }
-
-                        .item2 {
-                            background-image: url(../../assets/img/main_img4.webp);
+                        .carouselHeadText{
+                            font-size: 1.35rem;
+                            @include lg{
+                                font-size: 2.5rem;
+                            }
                         }
-
-                        .item3 {
-                            background-image: url(../../assets/img/main_img3.webp);
-                        }
-                        .item4 {
-                            background-image: url(../../assets/img/main_img2.webp);
-                        }
-
+                    }
+                    .owlItem1{
+                        background-image: url(../../assets/img/main_img.webp);
+                    }
+                    .owlItem2{
+                        background-image: url(../../assets/img/main_img2.webp);
+                    }
+                    .owlItem3{
+                        background-image: url(../../assets/img/main_img3.webp);
+                    }
+                    .owlItem4{
+                        background-image: url(../../assets/img/main_img4.webp);
                     }
                 }
             }
@@ -120,6 +108,7 @@
                     color: #ffffff;
                     font-weight: 600;
                     padding: .4rem 0;
+                    text-align: center;
                 }
             }
         }

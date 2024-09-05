@@ -1,11 +1,11 @@
-// MAİN CAROUSEL
-const myCarouselElement = document.querySelector('#carouselExampleSlidesOnly');
+// BOOTSTRAP MAİN CAROUSEL
+// const myCarouselElement = document.querySelector('#carouselExampleSlidesOnly');
 
-const carousel = new bootstrap.Carousel(myCarouselElement, {
-    interval: 2000,
-    touch: true,
-    wrap: true
-});
+// const carousel = new bootstrap.Carousel(myCarouselElement, {
+//     interval: 2000,
+//     touch: true,
+//     wrap: true
+// });
 
 // SEARCH FORM
 const searchEl = document.getElementById('search_icon');
@@ -51,3 +51,6 @@ rightFirstBtn.addEventListener('click', ()=>{
 leftFirstBtn.addEventListener('click', ()=>{
     scrollFirstContainer.scrollLeft -= 400;
 });
+
+
+import "./js/owlCarousel.js";
