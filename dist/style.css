@@ -36,7 +36,6 @@
 @font-face {
   font-family: Britanica-Bold;
   src: url(../../assets/fonts/Bold.woff);
-  font-weight: 400;
 }
 * {
   margin: 0;
@@ -44,7 +43,7 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none !important;
-  font-family: Britanica !important;
+  font-family: Britanica-Bold !important;
 }
 
 html {
