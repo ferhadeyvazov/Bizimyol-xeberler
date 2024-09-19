@@ -7,16 +7,22 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none !important;
-    font-family: Britanica !important;
 }
 
 html{
     scroll-behavior: smooth;
+    color-scheme: dark light;
 }
 
-img{
+body{
+    font-family: Britanica !important;
+}
+
+img, picture, video{
     width: 100%;
     height: auto;
+    vertical-align: middle;
+    font-style: italic;
 }
 
 ul{
@@ -26,6 +32,13 @@ ul{
 
 a{
     color: #212529;
+}
+
+h1, h2, h3, h4, h5, h6{
+    text-wrap: balance;
+}
+p{
+    text-wrap: pretty;
 }
 
 .section{
@@ -44,6 +57,13 @@ a{
     @include lg{
         padding: 0;
     }
+}
+
+.title{
+    font-size: 5rem;
+}
+.subtitle{
+    font-size: 3rem;
 }
 
 .disFlex{
